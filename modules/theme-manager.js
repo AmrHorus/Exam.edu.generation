@@ -25,11 +25,34 @@ const ThemeManager = {
         const root = document.documentElement;
         root.removeAttribute('data-theme');
         
+        let actualTheme = theme;
         if (theme === 'system') {
             const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            root.setAttribute('data-theme', systemDark ? 'dark' : 'light');
+            actualTheme = systemDark ? 'dark' : 'light';
+        }
+        
+        root.setAttribute('data-theme', actualTheme);
+        this.updateSystemIcon(theme, actualTheme);
+    },
+    
+    /**
+     * Update the system mode icon based on current actual theme
+     * @param {string} selectedTheme - The user's selected theme preference
+     * @param {string} actualTheme - The actual applied theme (light or dark)
+     */
+    updateSystemIcon(selectedTheme, actualTheme) {
+        const systemIcon = document.getElementById('theme-icon-system');
+        const settingsSystemIcon = document.getElementById('settings-theme-icon-system');
+        
+        if (selectedTheme === 'system') {
+            // In system mode, show sun for light, moon for dark
+            const iconSrc = actualTheme === 'dark' ? 'assets/Moon.jpg' : 'assets/Sun.jpg';
+            if (systemIcon) systemIcon.src = iconSrc;
+            if (settingsSystemIcon) settingsSystemIcon.src = iconSrc;
         } else {
-            root.setAttribute('data-theme', theme);
+            // When not in system mode, still show sun as placeholder
+            if (systemIcon) systemIcon.src = 'assets/Sun.jpg';
+            if (settingsSystemIcon) settingsSystemIcon.src = 'assets/Sun.jpg';
         }
     },
     
@@ -91,7 +114,9 @@ const ThemeManager = {
         const handleChange = (e) => {
             const currentTheme = localStorage.getItem(this.THEME_KEY) || 'system';
             if (currentTheme === 'system') {
-                this.applyTheme('system');
+                const newActualTheme = e.matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', newActualTheme);
+                this.updateSystemIcon('system', newActualTheme);
             }
         };
         
@@ -111,3 +136,8 @@ const ThemeManager = {
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = ThemeManager;
 }
+
+// Auto-initialize when DOM is ready (but inline script handles initial apply)
+document.addEventListener('DOMContentLoaded', () => {
+    ThemeManager.init();
+});

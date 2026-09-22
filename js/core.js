@@ -864,7 +864,58 @@ const ExamApp = {
      * Render settings
      */
     renderSettings() {
-        // Implementation for settings view
+        // Sync theme radio with current theme state
+        const currentTheme = ThemeManager.getTheme();
+        const themeRadios = document.querySelectorAll('input[name="theme-setting"]');
+        themeRadios.forEach(radio => {
+            radio.checked = radio.value === currentTheme;
+        });
+        
+        // Load other settings
+        const settings = Storage.settings.get();
+        
+        if (document.getElementById('default-difficulty')) {
+            document.getElementById('default-difficulty').value = settings.defaultDifficulty || 'medium';
+        }
+        if (document.getElementById('default-question-count')) {
+            document.getElementById('default-question-count').value = settings.defaultQuestionCount || 15;
+        }
+        if (document.getElementById('default-language')) {
+            document.getElementById('default-language').value = settings.language || 'en';
+        }
+        
+        // Bind theme radio changes
+        themeRadios.forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                ThemeManager.setTheme(e.target.value);
+                Storage.settings.update({ theme: e.target.value });
+            });
+        });
+        
+        // Bind other setting changes
+        const difficultySelect = document.getElementById('default-difficulty');
+        if (difficultySelect) {
+            difficultySelect.addEventListener('change', (e) => {
+                Storage.settings.update({ defaultDifficulty: e.target.value });
+            });
+        }
+        
+        const countInput = document.getElementById('default-question-count');
+        if (countInput) {
+            countInput.addEventListener('change', (e) => {
+                const value = parseInt(e.target.value);
+                if (value > 0 && value <= 100) {
+                    Storage.settings.update({ defaultQuestionCount: value });
+                }
+            });
+        }
+        
+        const languageSelect = document.getElementById('default-language');
+        if (languageSelect) {
+            languageSelect.addEventListener('change', (e) => {
+                Storage.settings.update({ language: e.target.value });
+            });
+        }
     },
 
     /**
