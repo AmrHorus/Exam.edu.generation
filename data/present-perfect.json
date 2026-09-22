@@ -1,0 +1,158 @@
+{
+  "topic": "Present Perfect",
+  "questions": [
+    {
+      "id": "pp-e-001",
+      "topic": "Present Perfect",
+      "difficulty": "easy",
+      "question": "I _____ finished my homework.",
+      "options": ["have", "has", "had", "having"],
+      "answer": 0,
+      "explanation": "With 'I', we use 'have + past participle' for Present Perfect."
+    },
+    {
+      "id": "pp-e-002",
+      "topic": "Present Perfect",
+      "difficulty": "easy",
+      "question": "She _____ visited Paris three times.",
+      "options": ["have", "has", "had", "having"],
+      "answer": 1,
+      "explanation": "With third-person singular 'she', we use 'has + past participle'."
+    },
+    {
+      "id": "pp-e-003",
+      "topic": "Present Perfect",
+      "difficulty": "easy",
+      "question": "They _____ already eaten dinner.",
+      "options": ["have", "has", "had", "having"],
+      "answer": 0,
+      "explanation": "With 'they', we use 'have + past participle' for Present Perfect."
+    },
+    {
+      "id": "pp-e-004",
+      "topic": "Present Perfect",
+      "difficulty": "easy",
+      "question": "He _____ lost his wallet.",
+      "options": ["have", "has", "had", "having"],
+      "answer": 1,
+      "explanation": "Third-person singular requires 'has + past participle'."
+    },
+    {
+      "id": "pp-e-005",
+      "topic": "Present Perfect",
+      "difficulty": "easy",
+      "question": "We _____ known each other for years.",
+      "options": ["have", "has", "had", "having"],
+      "answer": 0,
+      "explanation": "With 'we', we use 'have + past participle'."
+    },
+    {
+      "id": "pp-m-001",
+      "topic": "Present Perfect",
+      "difficulty": "medium",
+      "question": "_____ you ever been to Japan?",
+      "options": ["Have", "Has", "Had", "Do"],
+      "answer": 0,
+      "explanation": "Question form: 'Have + subject + past participle' for experiences."
+    },
+    {
+      "id": "pp-m-002",
+      "topic": "Present Perfect",
+      "difficulty": "medium",
+      "question": "She _____ not seen that movie yet.",
+      "options": ["have", "has", "had", "is"],
+      "answer": 1,
+      "explanation": "Negative Present Perfect with third-person: 'has not + past participle'"
+    },
+    {
+      "id": "pp-m-003",
+      "topic": "Present Perfect",
+      "difficulty": "medium",
+      "question": "How long _____ you lived here?",
+      "options": ["have", "has", "had", "do"],
+      "answer": 0,
+      "explanation": "'How long' questions about duration use Present Perfect with 'have'."
+    },
+    {
+      "id": "pp-m-004",
+      "topic": "Present Perfect",
+      "difficulty": "medium",
+      "question": "I _____ just finished my work.",
+      "options": ["have", "has", "had", "am"],
+      "answer": 0,
+      "explanation": "'Just' is commonly used with Present Perfect for recently completed actions."
+    },
+    {
+      "id": "pp-m-005",
+      "topic": "Present Perfect",
+      "difficulty": "medium",
+      "question": "They _____ never tried sushi.",
+      "options": ["have", "has", "had", "are"],
+      "answer": 0,
+      "explanation": "'Never' with Present Perfect: 'have + never + past participle'"
+    },
+    {
+      "id": "pp-h-001",
+      "topic": "Present Perfect",
+      "difficulty": "hard",
+      "question": "This is the best meal I _____ ever had.",
+      "options": ["have", "has", "had", "having"],
+      "answer": 0,
+      "explanation": "After superlatives with 'ever', we use Present Perfect."
+    },
+    {
+      "id": "pp-h-002",
+      "topic": "Present Perfect",
+      "difficulty": "hard",
+      "question": "She _____ in London since 2015.",
+      "options": ["lives", "has lived", "lived", "is living"],
+      "answer": 1,
+      "explanation": "'Since' with a specific time requires Present Perfect for continuing situations."
+    },
+    {
+      "id": "pp-h-003",
+      "topic": "Present Perfect",
+      "difficulty": "hard",
+      "question": "_____ he arrived yet?",
+      "options": ["Has", "Have", "Did", "Does"],
+      "answer": 0,
+      "explanation": "'Yet' in questions typically uses Present Perfect."
+    },
+    {
+      "id": "pp-h-004",
+      "topic": "Present Perfect",
+      "difficulty": "hard",
+      "question": "I _____ this book twice already.",
+      "options": ["read", "have read", "am reading", "will read"],
+      "answer": 1,
+      "explanation": "'Already' indicates completed action relevant to present, requiring Present Perfect."
+    },
+    {
+      "id": "pp-a-001",
+      "topic": "Present Perfect",
+      "difficulty": "advanced",
+      "question": "Not only _____ she finished her work, but she also helped others.",
+      "options": ["has", "have", "had", "did"],
+      "answer": 0,
+      "explanation": "With 'not only' at the start, we use inversion: 'has + subject + past participle'"
+    },
+    {
+      "id": "pp-a-002",
+      "topic": "Present Perfect",
+      "difficulty": "advanced",
+      "question": "Rarely _____ I seen such dedication.",
+      "options": ["have", "has", "had", "do"],
+      "answer": 0,
+      "explanation": "With 'rarely' at the beginning, we use inversion with Present Perfect."
+    },
+    {
+      "id": "pp-a-003",
+      "topic": "Present Perfect",
+      "difficulty": "advanced",
+      "question": "It's high time we _____ a decision.",
+      "options": ["make", "made", "have made", "will make"],
+      "answer": 1,
+      "explanation": "After 'It's high time', we use past simple to express that something should be done now."
+    }
+  ]
+}

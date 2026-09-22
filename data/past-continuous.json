@@ -1,0 +1,149 @@
+{
+  "topic": "Past Continuous",
+  "questions": [
+    {
+      "id": "pc-e-001",
+      "topic": "Past Continuous",
+      "difficulty": "easy",
+      "question": "I _____ TV when she called.",
+      "options": ["watched", "was watching", "am watching", "have watched"],
+      "answer": 1,
+      "explanation": "Past Continuous is formed with 'was/were + verb-ing'. For interrupted actions, we use Past Continuous."
+    },
+    {
+      "id": "pc-e-002",
+      "topic": "Past Continuous",
+      "difficulty": "easy",
+      "question": "They _____ football at 5 PM yesterday.",
+      "options": ["played", "were playing", "are playing", "play"],
+      "answer": 1,
+      "explanation": "For actions in progress at a specific time in the past, we use Past Continuous."
+    },
+    {
+      "id": "pc-e-003",
+      "topic": "Past Continuous",
+      "difficulty": "easy",
+      "question": "She _____ when I arrived.",
+      "options": ["sleeps", "slept", "was sleeping", "is sleeping"],
+      "answer": 2,
+      "explanation": "An action in progress when another action happened uses Past Continuous."
+    },
+    {
+      "id": "pc-e-004",
+      "topic": "Past Continuous",
+      "difficulty": "easy",
+      "question": "We _____ dinner at 8 o'clock last night.",
+      "options": ["had", "were having", "are having", "have"],
+      "answer": 1,
+      "explanation": "Past Continuous describes an action in progress at a specific time in the past."
+    },
+    {
+      "id": "pc-e-005",
+      "topic": "Past Continuous",
+      "difficulty": "easy",
+      "question": "He _____ to music all evening.",
+      "options": ["listened", "was listening", "is listening", "listens"],
+      "answer": 1,
+      "explanation": "Past Continuous is used for actions that continued for a period of time in the past."
+    },
+    {
+      "id": "pc-m-001",
+      "topic": "Past Continuous",
+      "difficulty": "medium",
+      "question": "While I _____, my brother was cooking.",
+      "options": ["studied", "was studying", "am studying", "study"],
+      "answer": 1,
+      "explanation": "When two actions happen simultaneously in the past, both use Past Continuous."
+    },
+    {
+      "id": "pc-m-002",
+      "topic": "Past Continuous",
+      "difficulty": "medium",
+      "question": "What _____ at 10 AM yesterday?",
+      "options": ["did you do", "were you doing", "are you doing", "do you do"],
+      "answer": 1,
+      "explanation": "Questions about actions in progress at a specific past time use Past Continuous."
+    },
+    {
+      "id": "pc-m-003",
+      "topic": "Past Continuous",
+      "difficulty": "medium",
+      "question": "It _____ heavily when we left the house.",
+      "options": ["rained", "was raining", "is raining", "rains"],
+      "answer": 1,
+      "explanation": "Weather conditions in progress at a specific past moment use Past Continuous."
+    },
+    {
+      "id": "pc-m-004",
+      "topic": "Past Continuous",
+      "difficulty": "medium",
+      "question": "They _____ about moving when I saw them.",
+      "options": ["talked", "were talking", "are talking", "talk"],
+      "answer": 1,
+      "explanation": "Past Continuous is used for actions in progress at a specific moment in the past."
+    },
+    {
+      "id": "pc-m-005",
+      "topic": "Past Continuous",
+      "difficulty": "medium",
+      "question": "I _____ not _____ when you called.",
+      "options": ["did / sleep", "was / sleeping", "am / sleeping", "do / sleep"],
+      "answer": 1,
+      "explanation": "Negative Past Continuous is formed with 'was/were + not + verb-ing'."
+    },
+    {
+      "id": "pc-h-001",
+      "topic": "Past Continuous",
+      "difficulty": "hard",
+      "question": "While she _____ the report, her colleague _____ the presentation.",
+      "options": ["wrote / prepared", "was writing / was preparing", "is writing / is preparing", "writes / prepares"],
+      "answer": 1,
+      "explanation": "Two simultaneous ongoing actions in the past both require Past Continuous."
+    },
+    {
+      "id": "pc-h-002",
+      "topic": "Past Continuous",
+      "difficulty": "hard",
+      "question": "He claimed he _____ asleep when the incident _____.",
+      "options": ["slept / occurred", "was sleeping / occurred", "is sleeping / occurs", "sleeps / occurs"],
+      "answer": 1,
+      "explanation": "In reported speech about ongoing past actions, Past Continuous is maintained."
+    },
+    {
+      "id": "pc-h-003",
+      "topic": "Past Continuous",
+      "difficulty": "hard",
+      "question": "_____ you _____ aware that someone _____ watching you?",
+      "options": ["Did / be / was", "Were / being / was", "Are / being / is", "Do / be / is"],
+      "answer": 1,
+      "explanation": "Past Continuous passive and active can be combined in complex sentences."
+    },
+    {
+      "id": "pc-h-004",
+      "topic": "Past Continuous",
+      "difficulty": "hard",
+      "question": "The phone rang while I _____ a shower, so I _____ it.",
+      "options": ["had / didn't answer", "was having / couldn't answer", "am having / can't answer", "have / don't answer"],
+      "answer": 1,
+      "explanation": "Past Continuous for the ongoing action, Past Simple for the interrupting action."
+    },
+    {
+      "id": "pc-a-001",
+      "topic": "Past Continuous",
+      "difficulty": "advanced",
+      "question": "Hardly _____ I _____ out of the house when it _____ to pour.",
+      "options": ["did / step / started", "had / stepped / started", "was / stepping / starting", "have / stepped / starts"],
+      "answer": 1,
+      "explanation": "With 'hardly...when', we typically use Past Perfect for the first action and Past Simple for the second."
+    },
+    {
+      "id": "pc-a-002",
+      "topic": "Past Continuous",
+      "difficulty": "advanced",
+      "question": "All morning, the team _____ data while the manager _____ reports.",
+      "options": ["analyzed / wrote", "was analyzing / was writing", "analyzes / writes", "has analyzed / has written"],
+      "answer": 1,
+      "explanation": "Parallel ongoing actions over a period use Past Continuous for both subjects."
+    }
+  ]
+}

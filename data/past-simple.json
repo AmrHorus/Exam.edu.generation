@@ -1,0 +1,158 @@
+{
+  "topic": "Past Simple",
+  "questions": [
+    {
+      "id": "pst-e-001",
+      "topic": "Past Simple",
+      "difficulty": "easy",
+      "question": "She _____ to the store yesterday.",
+      "options": ["go", "went", "gone", "going"],
+      "answer": 1,
+      "explanation": "'Went' is the past simple form of 'go'."
+    },
+    {
+      "id": "pst-e-002",
+      "topic": "Past Simple",
+      "difficulty": "easy",
+      "question": "They _____ pizza for dinner last night.",
+      "options": ["eat", "ate", "eaten", "eating"],
+      "answer": 1,
+      "explanation": "'Ate' is the past simple form of 'eat'."
+    },
+    {
+      "id": "pst-e-003",
+      "topic": "Past Simple",
+      "difficulty": "easy",
+      "question": "He _____ his homework after school.",
+      "options": ["do", "did", "done", "doing"],
+      "answer": 1,
+      "explanation": "'Did' is the past simple form of 'do'."
+    },
+    {
+      "id": "pst-e-004",
+      "topic": "Past Simple",
+      "difficulty": "easy",
+      "question": "We _____ a great movie last weekend.",
+      "options": ["see", "saw", "seen", "seeing"],
+      "answer": 1,
+      "explanation": "'Saw' is the past simple form of 'see'."
+    },
+    {
+      "id": "pst-e-005",
+      "topic": "Past Simple",
+      "difficulty": "easy",
+      "question": "I _____ tired after work.",
+      "options": ["am", "was", "were", "been"],
+      "answer": 1,
+      "explanation": "'Was' is the past simple form of 'be' for first-person singular."
+    },
+    {
+      "id": "pst-m-001",
+      "topic": "Past Simple",
+      "difficulty": "medium",
+      "question": "She _____ her keys this morning.",
+      "options": ["lose", "lost", "loses", "losing"],
+      "answer": 1,
+      "explanation": "'Lost' is the past simple form of 'lose'."
+    },
+    {
+      "id": "pst-m-002",
+      "topic": "Past Simple",
+      "difficulty": "medium",
+      "question": "_____ you enjoy the party?",
+      "options": ["Do", "Did", "Does", "Were"],
+      "answer": 1,
+      "explanation": "For past simple questions, we use the auxiliary 'did'."
+    },
+    {
+      "id": "pst-m-003",
+      "topic": "Past Simple",
+      "difficulty": "medium",
+      "question": "They _____ not come to the meeting.",
+      "options": ["do", "did", "does", "were"],
+      "answer": 1,
+      "explanation": "Negative past simple: 'did not + base verb'"
+    },
+    {
+      "id": "pst-m-004",
+      "topic": "Past Simple",
+      "difficulty": "medium",
+      "question": "Where _____ she buy that dress?",
+      "options": ["do", "did", "does", "was"],
+      "answer": 1,
+      "explanation": "Question word + 'did' + subject + base verb for past simple questions."
+    },
+    {
+      "id": "pst-m-005",
+      "topic": "Past Simple",
+      "difficulty": "medium",
+      "question": "The train _____ at 6 PM yesterday.",
+      "options": ["arrive", "arrived", "arrives", "arriving"],
+      "answer": 1,
+      "explanation": "Regular verbs in past simple add '-ed': arrive → arrived."
+    },
+    {
+      "id": "pst-h-001",
+      "topic": "Past Simple",
+      "difficulty": "hard",
+      "question": "When I was young, I _____ play tennis every day.",
+      "options": ["use to", "used to", "using to", "uses to"],
+      "answer": 1,
+      "explanation": "'Used to' expresses past habits or states that are no longer true."
+    },
+    {
+      "id": "pst-h-002",
+      "topic": "Past Simple",
+      "difficulty": "hard",
+      "question": "She _____ understand what he meant.",
+      "options": ["didn't", "don't", "doesn't", "hadn't"],
+      "answer": 0,
+      "explanation": "Negative past simple: 'didn't + base verb'"
+    },
+    {
+      "id": "pst-h-003",
+      "topic": "Past Simple",
+      "difficulty": "hard",
+      "question": "Who _____ you meet at the conference?",
+      "options": ["do", "did", "were", "had"],
+      "answer": 1,
+      "explanation": "'Who' as subject question still requires 'did' for past simple."
+    },
+    {
+      "id": "pst-h-004",
+      "topic": "Past Simple",
+      "difficulty": "hard",
+      "question": "It was the best holiday I ever _____",
+      "options": ["have", "had", "has", "having"],
+      "answer": 1,
+      "explanation": "Past simple 'had' is used after superlatives with 'ever'."
+    },
+    {
+      "id": "pst-a-001",
+      "topic": "Past Simple",
+      "difficulty": "advanced",
+      "question": "No sooner _____ I arrived than it started raining.",
+      "options": ["did", "had", "have", "was"],
+      "answer": 0,
+      "explanation": "With 'no sooner', we use inversion: 'No sooner did + subject + verb'"
+    },
+    {
+      "id": "pst-a-002",
+      "topic": "Past Simple",
+      "difficulty": "advanced",
+      "question": "Little _____ they know what was about to happen.",
+      "options": ["do", "did", "had", "were"],
+      "answer": 1,
+      "explanation": "With negative adverbs like 'little' at the start, we use inversion with 'did'."
+    },
+    {
+      "id": "pst-a-003",
+      "topic": "Past Simple",
+      "difficulty": "advanced",
+      "question": "Only after he left _____ the truth.",
+      "options": ["I discovered", "did I discover", "I did discover", "discovered I"],
+      "answer": 1,
+      "explanation": "'Only after' at the beginning triggers inversion: 'did + subject + verb'"
+    }
+  ]
+}

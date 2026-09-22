@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EXAM - Professional English Grammar Exam Generator">
+  <title>EXAM - English Grammar Exam Generator</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./favicon/exam_favicon.png">
+
+
+  <style>
+:root {
+  /* Light Theme - Warm Paper/Vintage Computer */
+  --bg-primary: #f4f1ea;
+  --bg-secondary: #e8e4dc;
+  --bg-tertiary: #dcd8cf;
+  --surface: #ffffff;
+  --surface-alt: #faf8f5;
+  
+  --text-primary: #2c2a26;
+  --text-secondary: #5a5650;
+  --text-muted: #8a8680;
+  
+  --border-color: #3c3a36;
+  --border-light: #c4c0b8;
+  
+  --accent-primary: #2e6da3;
+  --accent-primary-hover: #255785;
+  --accent-secondary: #8b5a2b;
+  --accent-success: #3d8b3d;
+  --accent-danger: #b93d3d;
+  --accent-warning: #b98b2b;
+  
+  --focus-ring: #2e6da3;
+  --shadow-hard: 4px 4px 0 rgba(60, 58, 54, 0.15);
+  --shadow-inset: inset 2px 2px 0 rgba(60, 58, 54, 0.1);
+  
+  --font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'Courier New', Courier, monospace;
+  
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  
+  --transition-fast: 100ms ease;
+  --transition-normal: 200ms ease;
+  
+  --max-width: 1400px;
+  --header-height: 64px;
+}
+
+[data-theme="dark"] {
+  /* Dark Theme - CRT Terminal Inspired */
+  --bg-primary: #1a1c1a;
+  --bg-secondary: #242624;
+  --bg-tertiary: #2e302e;
+  --surface: #2a2c2a;
+  --surface-alt: #323432;
+  
+  --text-primary: #e8e6e0;
+  --text-secondary: #c8c6c0;
+  --text-muted: #8a8880;
+  
+  --border-color: #4a4c4a;
+  --border-light: #3a3c3a;
+  
+  --accent-primary: #5a9bd4;
+  --accent-primary-hover: #7ab0e0;
+  --accent-secondary: #c49a6c;
+  --accent-success: #6cb86c;
+  --accent-danger: #d46c6c;
+  --accent-warning: #d4b06c;
+  
+  --focus-ring: #5a9bd4;
+  --shadow-hard: 4px 4px 0 rgba(0, 0, 0, 0.4);
+  --shadow-inset: inset 2px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   Base Styles & Reset
+   ======================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  background-image: 
+    linear-gradient(var(--bg-secondary) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-secondary) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center top;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1rem; }
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+strong {
+  font-weight: 700;
+}
+
+code, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+/* ========================================
+   Accessibility
+   ======================================== */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-primary);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 10000;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow-hard);
+}
+
+.skip-link:focus {
+  top: var(--spacing-sm);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ========================================
+   Layout Components
+   ======================================== */
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--surface);
+  border-bottom: 3px solid var(--border-color);
+  box-shadow: 0 4px 0 var(--bg-tertiary);
+  height: var(--header-height);
+}
+
+.header-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.header-logo {
+  height: 40px;
+  width: auto;
+  image-rendering: pixelated;
+}
+
+.header-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  margin: 0;
+  letter-spacing: 0.1em;
+}
+
+.header-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+/* Navigation */
+.header-nav {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: transparent;
+  border: 2px solid transparent;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  min-width: 70px;
+}
+
+.nav-btn:hover {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.nav-btn.active {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--border-color);
+  box-shadow: 2px 2px 0 var(--border-color);
+}
+
+.nav-icon {
+  font-size: 1.25rem;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+/* Theme Switcher */
+.theme-switcher {
+  display: flex;
+  gap: var(--spacing-xs);
+  border: 2px solid var(--border-color);
+  padding: 2px;
+  background: var(--surface-alt);
+}
+
+.theme-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.theme-btn:hover {
+  background: var(--bg-secondary);
+}
+
+.theme-btn.active {
+  background: var(--accent-primary);
+}
+
+.theme-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  image-rendering: auto;
+}
+
+.theme-icon-text {
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+/* Main Content */
+.app-main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md);
+  min-height: calc(100vh - var(--header-height) - 64px);
+}
+
+.view {
+  display: none;
+}
+
+.view.active {
+  display: block;
+}
+
+.view-container {
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.view-header {
+  margin-bottom: var(--spacing-xl);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 3px solid var(--border-color);
+}
+
+.view-title {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.view-subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* ========================================
+   Dashboard
+   ======================================== */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-hard);
+  padding: var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.stat-card-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.stat-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-card-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  font-family: var(--font-mono);
+}
+
+.stat-card-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+  flex-wrap: wrap;
+}
+
+.quick-start-section {
+  background: var(--surface);
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-hard);
+  padding: var(--spacing-lg);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--border-light);
+}
+
+.steps-list {
+  list-style: none;
+  counter-reset: step;
+}
+
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px dashed var(--border-light);
+}
+
+.step-item:last-child {
+  border-bottom: none;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--accent-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+  border: 2px solid var(--border-color);
+}
+
+.step-text {
+  color: var(--text-secondary);
+  padding-top: 2px;
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border: 3px solid var(--border-color);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-hard);
+  background: var(--surface);
+  color: var(--text-primary);
+}
+
+.btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0 rgba(60, 58, 54, 0.15);
+}
+
+.btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 rgba(60, 58, 54, 0.15);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 2px 2px 0 rgba(60, 58, 54, 0.1);
+}
+
+.btn-primary {
+  background: var(--accent-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent-primary-hover);
+}
+
+.btn-secondary {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.btn-success {
+  background: var(--accent-success);
+  color: white;
+}
+
+.btn-danger {
+  background: var(--accent-danger);
+  color: white;
+}
+
+.btn-warning {
+  background: var(--accent-warning);
+  color: var(--text-primary);
+}
+
+.btn-large {
+  padding: var(--spacing-md) var(--spacing-xl);
+  font-size: 1rem;
+}
+
+.btn-small {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 0.75rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-icon {
+  font-size: 1.1em;
+}
+
+/* ========================================
+   Forms
+   ======================================== */
+
+.config-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.config-section {
+  background: var(--surface);
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-hard);
+  padding: var(--spacing-lg);
+}
+
+.section-legend {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  padding-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+  border-bottom: 2px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic-count {
+  font-family: var(--font-mono);
+  color: var(--accent-primary);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.form-input {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-family: inherit;
+  font-size: 0.875rem;
+  border: 2px solid var(--border-color);
+  background: var(--surface-alt);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-inset);
+}
+
+.form-input::placeholder {
+  color: var(--text-muted);
+}
+
+.form-input-small {
+  width: 100px;
+}
+
+/* Topic Grid */
+.topic-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--spacing-sm);
+}
+
+.topic-checkbox {
+  display: none;
+}
+
+.topic-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--surface-alt);
+  border: 2px solid var(--border-light);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-size: 0.875rem;
+}
+
+.topic-label:hover {
+  border-color: var(--border-color);
+  background: var(--bg-secondary);
+}
+
+.topic-checkbox:checked + .topic-label {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--border-color);
+  box-shadow: 2px 2px 0 var(--border-color);
+}
+
+.topic-checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border-color);
+  background: var(--surface);
+  flex-shrink: 0;
+}
+
+.topic-checkbox:checked + .topic-label .topic-checkmark {
+  background: white;
+  border-color: var(--border-color);
+}
+
+.topic-checkbox:checked + .topic-label .topic-checkmark::after {
+  content: '✓';
+  color: var(--accent-primary);
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Difficulty Selector */
+.difficulty-selector {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.difficulty-option {
+  cursor: pointer;
+}
+
+.difficulty-btn {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--border-color);
+  background: var(--surface-alt);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  transition: all var(--transition-fast);
+}
+
+.difficulty-option:hover .difficulty-btn {
+  border-color: var(--border-color);
+}
+
+.difficulty-option input:checked + .difficulty-btn {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--border-color);
+  box-shadow: 2px 2px 0 var(--border-color);
+}
+
+/* Count Selector */
+.count-selector {
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-sm);
+}
+
+.count-btn {
+  min-width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border-light);
+  background: var(--surface-alt);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.count-btn:hover {
+  border-color: var(--border-color);
+}
+
+.count-btn.active {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--border-color);
+  box-shadow: 2px 2px 0 var(--border-color);
+}
+
+.custom-count-field {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* Options Grid */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.checkbox-custom {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  background: var(--surface);
+  flex-shrink: 0;
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkbox-custom {
+  background: var(--accent-success);
+  border-color: var(--border-color);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkbox-custom::after {
+  content: '✓';
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Config Actions */
+.config-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.bank-status {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.bank-status.loading .status-indicator {
+  background: var(--accent-warning);
+  animation: pulse 1s infinite;
+}
+
+.bank-status.ready .status-indicator {
+  background: var(--accent-success);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* ========================================
+   Builder Layout
+   ======================================== */
+
+.builder-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-xl);
+}
+
+@media (min-width: 1024px) {
+  .builder-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.builder-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--border-light);
+}
+
+.preview-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.preview-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.preview-container {
+  background: var(--surface);
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-hard);
+  padding: var(--spacing-lg);
+  min-height: 400px;
+}
+
+.preview-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+  opacity: 0.5;
+}
+
+.empty-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-secondary);
+}
+
+.empty-description {
+  font-size: 0.875rem;
+  max-width: 300px;
+}
+
+/* Exam Preview Styles */
+.exam-preview {
+  font-family: 'Georgia', serif;
+}
+
+.exam-header {
+  text-align: center;
+  border-bottom: 3px double var(--border-color);
+  padding-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.exam-title-display {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.exam-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-sm);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.exam-question {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px dashed var(--border-light);
+}
+
+.exam-question:last-child {
+  border-bottom: none;
+}
+
+.question-number {
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin-right: var(--spacing-sm);
+}
+
+.question-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+}
+
+.question-options {
+  list-style: none;
+  margin-left: var(--spacing-lg);
+}
+
+.question-options li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.answer-blank {
+  display: inline-block;
+  width: 100px;
+  border-bottom: 2px solid var(--border-color);
+  margin: 0 var(--spacing-xs);
+}
+
+/* ========================================
+   Question Bank
+   ======================================== */
+
+.question-bank-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--surface);
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-hard);
+}
+
+.search-field {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-group {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.filter-select {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--border-color);
+  background: var(--surface-alt);
+  font-family: inherit;
+  font-size: 0.875rem;
+}
+
+.question-list {
+  background: var(--surface);
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-hard);
+}
+
+.question-item {
+  display: grid;
+  grid-template-columns: 60px 1fr 120px 100px 80px 120px;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  border-bottom: 2px solid var(--border-light);
+  align-items: center;
+}
+
+.question-item:last-child {
+  border-bottom: none;
+}
+
+.question-item:hover {
+  background: var(--surface-alt);
+}
+
+.question-id {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.question-preview {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.question-topic {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.question-difficulty {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.question-difficulty.easy { color: var(--accent-success); }
+.question-difficulty.medium { color: var(--accent-warning); }
+.question-difficulty.hard { color: var(--accent-danger); }
+.question-difficulty.advanced { color: var(--accent-primary); }
+
+.question-type {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.question-actions {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.question-actions .btn {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 0.65rem;
+}
+
+/* Responsive question list */
+@media (max-width: 1024px) {
+  .question-item {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+  
+  .question-id,
+  .question-topic,
+  .question-difficulty,
+  .question-type {
+    font-size: 0.65rem;
+  }
+  
+  .question-preview {
+    white-space: normal;
+  }
+}
+
+/* ========================================
+   Saved Exams
+   ======================================== */
+
+.exams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.exam-card {
+  background: var(--surface);
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-hard);
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.exam-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+}
+
+.exam-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.exam-card-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.exam-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.exam-card-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.exam-card-actions {
+  display: flex;
+  gap: var(--spacing-xs);
+  margin-top: auto;
+  padding-top: var(--spacing-md);
+  border-top: 2px solid var(--border-light);
+}
+
+/* ========================================
+   Settings
+   ======================================== */
+
+.settings-section {
+  background: var(--surface);
+  border: 3px solid var(--border-color);
+  box-shadow: var(--shadow-hard);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.settings-section-title {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--border-light);
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+}
+
+/* ========================================
+   Modal System
+   ======================================== */
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: var(--spacing-md);
+  animation: fadeIn 0.2s ease;
+}
+
+.modal {
+  background: var(--surface);
+  border: 4px solid var(--border-color);
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideIn 0.2s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 3px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  line-height: 1;
+  padding: var(--spacing-xs);
+}
+
+.modal-close:hover {
+  color: var(--text-primary);
+}
+
+.modal-body {
+  padding: var(--spacing-lg);
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 3px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+
+/* Confirmation Modal */
+.confirmation-modal {
+  text-align: center;
+}
+
+.confirmation-message {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.confirmation-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+/* ========================================
+   Toast Notifications
+   ======================================== */
+
+.toast-container {
+  position: fixed;
+  bottom: var(--spacing-lg);
+  right: var(--spacing-lg);
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--surface);
+  border: 3px solid var(--border-color);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  max-width: 400px;
+  animation: toastIn 0.3s ease;
+}
+
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(100%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.toast.toast-out {
+  animation: toastOut 0.3s ease forwards;
+}
+
+@keyframes toastOut {
+  from { opacity: 1; transform: translateX(0); }
+  to { opacity: 0; transform: translateX(100%); }
+}
+
+.toast-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.toast-message {
+  flex: 1;
+  font-size: 0.875rem;
+}
+
+.toast-success .toast-icon { color: var(--accent-success); }
+.toast-error .toast-icon { color: var(--accent-danger); }
+.toast-warning .toast-icon { color: var(--accent-warning); }
+.toast-info .toast-icon { color: var(--accent-primary); }
+
+/* ========================================
+   Empty States
+   ======================================== */
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-xxl);
+  color: var(--text-muted);
+}
+
+.empty-state-icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-md);
+  opacity: 0.5;
+}
+
+.empty-state-title {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.empty-state-description {
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-lg);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 56px;
+  }
+  
+  .header-title {
+    font-size: 1.25rem;
+  }
+  
+  .header-subtitle {
+    display: none;
+  }
+  
+  .nav-btn {
+    min-width: 50px;
+    padding: var(--spacing-xs);
+  }
+  
+  .nav-label {
+    display: none;
+  }
+  
+  .app-main {
+    padding: var(--spacing-md);
+  }
+  
+  .view-title {
+    font-size: 1.5rem;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stat-card {
+    padding: var(--spacing-md);
+  }
+  
+  .stat-card-icon {
+    font-size: 2rem;
+  }
+  
+  .stat-card-value {
+    font-size: 1.5rem;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .topic-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-actions {
+    flex-direction: column;
+  }
+  
+  .dashboard-actions .btn {
+    width: 100%;
+  }
+  
+  .question-bank-toolbar {
+    flex-direction: column;
+  }
+  
+  .search-field {
+    width: 100%;
+  }
+  
+  .exams-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal {
+    margin: var(--spacing-md);
+    max-height: calc(100vh - var(--spacing-xl));
+  }
+  
+  .toast-container {
+    left: var(--spacing-md);
+    right: var(--spacing-md);
+  }
+  
+  .toast {
+    min-width: auto;
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .topic-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .difficulty-selector {
+    flex-direction: column;
+  }
+  
+  .count-selector {
+    justify-content: center;
+  }
+  
+  .theme-switcher {
+    gap: 2px;
+  }
+  
+  .theme-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+
+@media print {
+  .app-header,
+  .header-nav,
+  .header-actions,
+  .builder-panel:first-child,
+  .preview-actions,
+  .config-actions,
+  .toast-container,
+  .modal-backdrop {
+    display: none !important;
+  }
+  
+  .app-main {
+    max-width: none;
+    padding: 0;
+  }
+  
+  .view-container {
+    animation: none;
+  }
+  
+  .preview-container {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header -->
+  <header class="app-header" role="banner">
+    <div class="header-container">
+      <div class="header-brand">
+        <img src="assets/Logo.png" alt="EXAM Logo" class="header-logo" onerror="this.style.display='none'">
+        <div class="header-title-group">
+          <h1 class="header-title">EXAM</h1>
+          <p class="header-subtitle">English Grammar Exam Generator</p>
+        </div>
+      </div>
+      
+      <nav class="header-nav" role="navigation" aria-label="Main navigation">
+        <button class="nav-btn active" data-view="dashboard" aria-label="Dashboard">
+          <span class="nav-icon">&#9634;</span>
+          <span class="nav-label">Dashboard</span>
+        </button>
+        <button class="nav-btn" data-view="builder" aria-label="Create Exam">
+          <span class="nav-icon">&#9998;</span>
+          <span class="nav-label">Create Exam</span>
+        </button>
+        <button class="nav-btn" data-view="question-bank" aria-label="Question Bank">
+          <span class="nav-icon">&#128214;</span>
+          <span class="nav-label">Question Bank</span>
+        </button>
+        <button class="nav-btn" data-view="saved-exams" aria-label="Saved Exams">
+          <span class="nav-icon">&#128193;</span>
+          <span class="nav-label">Saved Exams</span>
+        </button>
+        <button class="nav-btn" data-view="settings" aria-label="Settings">
+          <span class="nav-icon">&#9881;</span>
+          <span class="nav-label">Settings</span>
+        </button>
+      </nav>
+      
+      <div class="header-actions">
+        <!-- Theme Switcher -->
+        <div class="theme-switcher" role="group" aria-label="Theme selection">
+          <button class="theme-btn" data-theme="light" aria-label="Light mode" title="Light Mode">
+            <img src="assets/Sun.jpg" alt="" class="theme-icon" onerror="this.style.display='none'; this.parentElement.textContent='\u2600'">
+          </button>
+          <button class="theme-btn" data-theme="dark" aria-label="Dark mode" title="Dark Mode">
+            <img src="assets/Moon.jpg" alt="" class="theme-icon" onerror="this.style.display='none'; this.parentElement.textContent='\ud83c\udf19'">
+          </button>
+          <button class="theme-btn" data-theme="system" aria-label="System theme" title="System Default">
+            <span class="theme-icon-text">SYS</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main id="main-content" class="app-main" role="main">
+    
+    <!-- Dashboard View -->
+    <section id="view-dashboard" class="view active" aria-labelledby="dashboard-title">
+      <div class="view-container">
+        <header class="view-header">
+          <h2 id="dashboard-title" class="view-title">Dashboard</h2>
+          <p class="view-subtitle">Welcome to EXAM - Your offline English grammar exam generator</p>
+        </header>
+        
+        <div class="dashboard-grid">
+          <div class="stat-card">
+            <div class="stat-card-icon">&#128221;</div>
+            <div class="stat-card-content">
+              <span class="stat-card-value" id="stat-total-questions">0</span>
+              <span class="stat-card-label">Total Questions</span>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-card-icon">&#128214;</div>
+            <div class="stat-card-content">
+              <span class="stat-card-value" id="stat-total-topics">0</span>
+              <span class="stat-card-label">Topics Available</span>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-card-icon">&#128190;</div>
+            <div class="stat-card-content">
+              <span class="stat-card-value" id="stat-saved-exams">0</span>
+              <span class="stat-card-label">Saved Exams</span>
+            </div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-card-icon">&#128222;</div>
+            <div class="stat-card-content">
+              <span class="stat-card-value" id="stat-custom-questions">0</span>
+              <span class="stat-card-label">Custom Questions</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="dashboard-actions">
+          <button class="btn btn-primary btn-large" data-action="create-exam">
+            <span class="btn-icon">+</span>
+            Create New Exam
+          </button>
+          <button class="btn btn-secondary btn-large" data-action="browse-questions">
+            <span class="btn-icon">&#128214;</span>
+            Browse Question Bank
+          </button>
+        </div>
+        
+        <div class="recent-exams-section">
+          <h3 class="section-title">Recent Exams</h3>
+          <div id="recent-exams-list" class="recent-exams-list">
+            <!-- Recent exams will be dynamically inserted here -->
+          </div>
+        </div>
+        
+        <div class="quick-start-section">
+          <h3 class="section-title">Quick Start Guide</h3>
+          <ol class="steps-list">
+            <li class="step-item">
+              <span class="step-number">1</span>
+              <span class="step-text">Select grammar topics from the Question Bank</span>
+            </li>
+            <li class="step-item">
+              <span class="step-number">2</span>
+              <span class="step-text">Configure difficulty and number of questions</span>
+            </li>
+            <li class="step-item">
+              <span class="step-number">3</span>
+              <span class="step-text">Generate your customized exam</span>
+            </li>
+            <li class="step-item">
+              <span class="step-number">4</span>
+              <span class="step-text">Preview and download as PDF</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Exam Builder View -->
+    <section id="view-builder" class="view" aria-labelledby="builder-title">
+      <div class="view-container">
+        <header class="view-header">
+          <h2 id="builder-title" class="view-title">Create Exam</h2>
+          <p class="view-subtitle">Configure your exam settings and generate a customized test</p>
+        </header>
+        
+        <div class="builder-layout">
+          <!-- Left Panel: Configuration -->
+          <aside class="builder-panel builder-config" aria-label="Exam configuration">
+            <form id="exam-config-form" class="config-form">
+              <!-- Exam Details Section -->
+              <fieldset class="config-section">
+                <legend class="section-legend">Exam Details</legend>
+                
+                <div class="form-grid">
+                  <div class="form-field">
+                    <label for="exam-title" class="form-label">Exam Title</label>
+                    <input type="text" id="exam-title" class="form-input" value="English Grammar Quiz" placeholder="Enter exam title">
+                  </div>
+                  
+                  <div class="form-field">
+                    <label for="exam-subject" class="form-label">Subject</label>
+                    <input type="text" id="exam-subject" class="form-input" value="English Grammar" placeholder="Enter subject">
+                  </div>
+                  
+                  <div class="form-field">
+                    <label for="exam-school" class="form-label">School/Institution</label>
+                    <input type="text" id="exam-school" class="form-input" placeholder="Enter school name">
+                  </div>
+                  
+                  <div class="form-field">
+                    <label for="exam-teacher" class="form-label">Teacher Name</label>
+                    <input type="text" id="exam-teacher" class="form-input" placeholder="Enter teacher name">
+                  </div>
+                  
+                  <div class="form-field">
+                    <label for="exam-student" class="form-label">Student Name</label>
+                    <input type="text" id="exam-student" class="form-input" placeholder="Enter student name">
+                  </div>
+                  
+                  <div class="form-field">
+                    <label for="exam-class" class="form-label">Class/Grade</label>
+                    <input type="text" id="exam-class" class="form-input" placeholder="Enter class">
+                  </div>
+                  
+                  <div class="form-field">
+                    <label for="exam-date" class="form-label">Date</label>
+                    <input type="date" id="exam-date" class="form-input">
+                  </div>
+                  
+                  <div class="form-field">
+                    <label for="exam-duration" class="form-label">Duration (minutes)</label>
+                    <input type="number" id="exam-duration" class="form-input" min="5" max="180" value="60" placeholder="60">
+                  </div>
+                </div>
+              </fieldset>
+              
+              <!-- Topic Selection Section -->
+              <fieldset class="config-section">
+                <legend class="section-legend">
+                  Grammar Topics
+                  <span class="topic-count" id="topic-count-display">0 selected</span>
+                </legend>
+                
+                <div class="topic-actions">
+                  <button type="button" class="btn btn-small" id="select-all-topics">Select All</button>
+                  <button type="button" class="btn btn-small btn-secondary" id="clear-all-topics">Clear All</button>
+                </div>
+                
+                <div class="topic-grid" id="topic-grid">
+                  <!-- Topics will be dynamically inserted here -->
+                </div>
+              </fieldset>
+              
+              <!-- Difficulty & Count Section -->
+              <fieldset class="config-section">
+                <legend class="section-legend">Difficulty &amp; Questions</legend>
+                
+                <div class="form-field">
+                  <label class="form-label">Difficulty Level</label>
+                  <div class="difficulty-selector" role="radiogroup" aria-label="Difficulty level">
+                    <label class="difficulty-option">
+                      <input type="radio" name="difficulty" value="easy" class="visually-hidden">
+                      <span class="difficulty-btn">Easy</span>
+                    </label>
+                    <label class="difficulty-option">
+                      <input type="radio" name="difficulty" value="medium" checked class="visually-hidden">
+                      <span class="difficulty-btn">Medium</span>
+                    </label>
+                    <label class="difficulty-option">
+                      <input type="radio" name="difficulty" value="hard" class="visually-hidden">
+                      <span class="difficulty-btn">Hard</span>
+                    </label>
+                    <label class="difficulty-option">
+                      <input type="radio" name="difficulty" value="advanced" class="visually-hidden">
+                      <span class="difficulty-btn">Advanced</span>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="form-field">
+                  <label class="form-label">Number of Questions</label>
+                  <div class="count-selector">
+                    <button type="button" class="count-btn" data-count="5">5</button>
+                    <button type="button" class="count-btn" data-count="10">10</button>
+                    <button type="button" class="count-btn active" data-count="15">15</button>
+                    <button type="button" class="count-btn" data-count="20">20</button>
+                    <button type="button" class="count-btn" data-count="30">30</button>
+                    <button type="button" class="count-btn" data-count="40">40</button>
+                    <button type="button" class="count-btn" data-count="50">50</button>
+                  </div>
+                  <div class="custom-count-field">
+                    <label for="custom-question-count">Custom:</label>
+                    <input type="number" id="custom-question-count" class="form-input form-input-small" min="1" max="100" placeholder="Enter number">
+                  </div>
+                </div>
+              </fieldset>
+              
+              <!-- Options Section -->
+              <fieldset class="config-section">
+                <legend class="section-legend">Exam Options</legend>
+                
+                <div class="options-grid">
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="randomize-questions" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Randomize Questions</span>
+                  </label>
+                  
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="randomize-answers" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Randomize Answers</span>
+                  </label>
+                  
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="include-answer-key" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Include Answer Key</span>
+                  </label>
+                  
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="include-explanations">
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Include Explanations</span>
+                  </label>
+                </div>
+              </fieldset>
+              
+              <!-- Generate Button -->
+              <div class="config-actions">
+                <button type="submit" class="btn btn-primary btn-large btn-block" id="generate-exam-btn">
+                  <span class="btn-icon">&#9889;</span>
+                  Generate Exam
+                </button>
+                <div class="bank-status" id="bank-status">
+                  <span class="status-indicator"></span>
+                  <span class="status-text">Loading question bank...</span>
+                </div>
+              </div>
+            </form>
+          </aside>
+          
+          <!-- Right Panel: Preview -->
+          <div class="builder-panel builder-preview" aria-label="Exam preview">
+            <div class="preview-header">
+              <h3 class="preview-title">Exam Preview</h3>
+              <div class="preview-actions">
+                <button type="button" class="btn btn-small" id="regenerate-exam-btn" disabled>
+                  <span class="btn-icon">&#8635;</span>
+                  Regenerate
+                </button>
+                <button type="button" class="btn btn-success btn-small" id="download-pdf-btn" disabled>
+                  <span class="btn-icon">&#8595;</span>
+                  Download PDF
+                </button>
+              </div>
+            </div>
+            
+            <div class="preview-container" id="exam-preview-container">
+              <div class="preview-empty-state">
+                <div class="empty-icon">&#128196;</div>
+                <p class="empty-text">Your exam preview will appear here</p>
+                <p class="empty-hint">Configure the settings and click "Generate Exam"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Question Bank View -->
+    <section id="view-question-bank" class="view" aria-labelledby="question-bank-title">
+      <div class="view-container">
+        <header class="view-header">
+          <h2 id="question-bank-title" class="view-title">Question Bank</h2>
+          <p class="view-subtitle">Browse, search, and manage your grammar questions</p>
+        </header>
+        
+        <div class="question-bank-toolbar">
+          <div class="search-box">
+            <input type="text" id="question-search" class="search-input" placeholder="Search questions..." aria-label="Search questions">
+            <span class="search-icon">&#128269;</span>
+          </div>
+          
+          <div class="filter-group">
+            <select id="filter-topic" class="filter-select" aria-label="Filter by topic">
+              <option value="">All Topics</option>
+            </select>
+            
+            <select id="filter-difficulty" class="filter-select" aria-label="Filter by difficulty">
+              <option value="">All Difficulties</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+              <option value="advanced">Advanced</option>
+            </select>
+            
+            <select id="filter-type" class="filter-select" aria-label="Filter by type">
+              <option value="">All Types</option>
+              <option value="multiple-choice">Multiple Choice</option>
+              <option value="true-false">True/False</option>
+              <option value="fill-blank">Fill in Blank</option>
+              <option value="short-answer">Short Answer</option>
+              <option value="matching">Matching</option>
+            </select>
+          </div>
+          
+          <div class="action-group">
+            <button type="button" class="btn btn-secondary" id="add-question-btn">
+              <span class="btn-icon">+</span>
+              Add Question
+            </button>
+            <button type="button" class="btn btn-secondary" id="export-questions-btn">
+              <span class="btn-icon">&#8595;</span>
+              Export
+            </button>
+            <button type="button" class="btn btn-secondary" id="import-questions-btn">
+              <span class="btn-icon">&#8593;</span>
+              Import
+            </button>
+            <input type="file" id="import-file-input" class="visually-hidden" accept=".json" aria-label="Import questions file">
+          </div>
+        </div>
+        
+        <div class="question-stats">
+          <span id="question-count-display">Showing 0 questions</span>
+        </div>
+        
+        <div class="question-list" id="question-list">
+          <!-- Questions will be dynamically inserted here -->
+        </div>
+        
+        <div class="question-empty-state hidden" id="question-empty-state">
+          <div class="empty-icon">&#128214;</div>
+          <p class="empty-text">No questions found</p>
+          <p class="empty-hint">Try adjusting your filters or add a new question</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Saved Exams View -->
+    <section id="view-saved-exams" class="view" aria-labelledby="saved-exams-title">
+      <div class="view-container">
+        <header class="view-header">
+          <h2 id="saved-exams-title" class="view-title">Saved Exams</h2>
+          <p class="view-subtitle">Manage your previously generated exams</p>
+        </header>
+        
+        <div class="saved-exams-toolbar">
+          <button type="button" class="btn btn-secondary" id="import-exam-btn">
+            <span class="btn-icon">&#8593;</span>
+            Import Exam
+          </button>
+          <input type="file" id="import-exam-file-input" class="visually-hidden" accept=".json" aria-label="Import exam file">
+        </div>
+        
+        <div class="exams-grid" id="exams-grid">
+          <!-- Saved exams will be dynamically inserted here -->
+        </div>
+        
+        <div class="exams-empty-state hidden" id="exams-empty-state">
+          <div class="empty-icon">&#128193;</div>
+          <p class="empty-text">No saved exams yet</p>
+          <p class="empty-hint">Generate an exam and save it to access it later</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Settings View -->
+    <section id="view-settings" class="view" aria-labelledby="settings-title">
+      <div class="view-container">
+        <header class="view-header">
+          <h2 id="settings-title" class="view-title">Settings</h2>
+          <p class="view-subtitle">Customize your EXAM experience</p>
+        </header>
+        
+        <div class="settings-grid">
+          <!-- Appearance Settings -->
+          <fieldset class="settings-section">
+            <legend class="section-legend">Appearance</legend>
+            
+            <div class="setting-item">
+              <div class="setting-info">
+                <label class="setting-label">Theme</label>
+                <p class="setting-description">Choose your preferred color theme</p>
+              </div>
+              <div class="setting-control theme-preview-group">
+                <label class="theme-preview-option">
+                  <input type="radio" name="theme-setting" value="light" class="visually-hidden">
+                  <div class="theme-preview-card light">
+                    <img src="assets/Sun.jpg" alt="" class="theme-preview-icon" onerror="this.style.display='none'">
+                    <span>Light</span>
+                  </div>
+                </label>
+                <label class="theme-preview-option">
+                  <input type="radio" name="theme-setting" value="dark" class="visually-hidden">
+                  <div class="theme-preview-card dark">
+                    <img src="assets/Moon.jpg" alt="" class="theme-preview-icon" onerror="this.style.display='none'">
+                    <span>Dark</span>
+                  </div>
+                </label>
+                <label class="theme-preview-option">
+                  <input type="radio" name="theme-setting" value="system" class="visually-hidden">
+                  <div class="theme-preview-card system">
+                    <span class="theme-preview-icon-text">SYS</span>
+                    <span>System</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          
+          <!-- Default Settings -->
+          <fieldset class="settings-section">
+            <legend class="section-legend">Default Exam Settings</legend>
+            
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="default-difficulty" class="setting-label">Default Difficulty</label>
+                <p class="setting-description">Default difficulty for new exams</p>
+              </div>
+              <div class="setting-control">
+                <select id="default-difficulty" class="form-select">
+                  <option value="easy">Easy</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="hard">Hard</option>
+                  <option value="advanced">Advanced</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="setting-item">
+              <div class="setting-info">
+                <label for="default-question-count" class="setting-label">Default Question Count</label>
+                <p class="setting-description">Default number of questions for new exams</p>
+              </div>
+              <div class="setting-control">
+                <input type="number" id="default-question-count" class="form-input form-input-small" min="1" max="100" value="15">
+              </div>
+            </div>
+            
+            <div class="setting-item">
+              <div class="setting-info">
+                <span class="setting-label">Randomize Questions</span>
+                <p class="setting-description">Default setting for question randomization</p>
+              </div>
+              <div class="setting-control">
+                <label class="toggle-label">
+                  <input type="checkbox" id="default-randomize-questions" checked>
+                  <span class="toggle-switch"></span>
+                </label>
+              </div>
+            </div>
+            
+            <div class="setting-item">
+              <div class="setting-info">
+                <span class="setting-label">Randomize Answers</span>
+                <p class="setting-description">Default setting for answer randomization</p>
+              </div>
+              <div class="setting-control">
+                <label class="toggle-label">
+                  <input type="checkbox" id="default-randomize-answers" checked>
+                  <span class="toggle-switch"></span>
+                </label>
+              </div>
+            </div>
+            
+            <div class="setting-item">
+              <div class="setting-info">
+                <span class="setting-label">Include Answer Key</span>
+                <p class="setting-description">Default setting for answer key inclusion</p>
+              </div>
+              <div class="setting-control">
+                <label class="toggle-label">
+                  <input type="checkbox" id="default-include-answer-key" checked>
+                  <span class="toggle-switch"></span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          
+          <!-- Data Management -->
+          <fieldset class="settings-section">
+            <legend class="section-legend">Data Management</legend>
+            
+            <div class="setting-item">
+              <div class="setting-info">
+                <span class="setting-label">Export Question Bank</span>
+                <p class="setting-description">Download all custom questions as JSON</p>
+              </div>
+              <div class="setting-control">
+                <button type="button" class="btn btn-secondary" id="export-all-questions-btn">
+                  <span class="btn-icon">&#8595;</span>
+                  Export Questions
+                </button>
+              </div>
+            </div>
+            
+            <div class="setting-item">
+              <div class="setting-info">
+                <span class="setting-label">Export All Exams</span>
+                <p class="setting-description">Download all saved exams as JSON</p>
+              </div>
+              <div class="setting-control">
+                <button type="button" class="btn btn-secondary" id="export-all-exams-btn">
+                  <span class="btn-icon">&#8595;</span>
+                  Export Exams
+                </button>
+              </div>
+            </div>
+            
+            <div class="setting-item">
+              <div class="setting-info">
+                <span class="setting-label">Clear Custom Questions</span>
+                <p class="setting-description">Remove all custom questions from local storage</p>
+              </div>
+              <div class="setting-control">
+                <button type="button" class="btn btn-danger" id="clear-custom-questions-btn">
+                  <span class="btn-icon">&#128465;</span>
+                  Clear Questions
+                </button>
+              </div>
+            </div>
+            
+            <div class="setting-item">
+              <div class="setting-info">
+                <span class="setting-label">Clear All Data</span>
+                <p class="setting-description">Reset all application data to defaults</p>
+              </div>
+              <div class="setting-control">
+                <button type="button" class="btn btn-danger" id="clear-all-data-btn">
+                  <span class="btn-icon">&#128465;</span>
+                  Reset All Data
+                </button>
+              </div>
+            </div>
+          </fieldset>
+          
+          <!-- About -->
+          <fieldset class="settings-section">
+            <legend class="section-legend">About EXAM</legend>
+            
+            <div class="about-content">
+              <p><strong>EXAM</strong> is a professional offline-first English grammar exam generator designed for teachers and students.</p>
+              <p><strong>Version:</strong> 2.0.0</p>
+              <p><strong>Features:</strong></p>
+              <ul class="about-features">
+                <li>30+ grammar topics</li>
+                <li>Multiple question types</li>
+                <li>Professional PDF generation</li>
+                <li>Offline functionality</li>
+                <li>Question bank management</li>
+                <li>Import/Export support</li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- Question Modal -->
+  <dialog id="question-modal" class="modal" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <header class="modal-header">
+        <h3 id="modal-title" class="modal-title">Add Question</h3>
+        <button type="button" class="modal-close" aria-label="Close modal">&times;</button>
+      </header>
+      
+      <form id="question-form" class="modal-form">
+        <input type="hidden" id="edit-question-id">
+        
+        <div class="form-field">
+          <label for="question-text" class="form-label required">Question Text</label>
+          <textarea id="question-text" class="form-input form-textarea" rows="3" required placeholder="Enter your question"></textarea>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-field">
+            <label for="question-topic" class="form-label required">Topic</label>
+            <select id="question-topic" class="form-select" required>
+              <!-- Topics will be populated -->
+            </select>
+          </div>
+          
+          <div class="form-field">
+            <label for="question-difficulty" class="form-label required">Difficulty</label>
+            <select id="question-difficulty" class="form-select" required>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-field">
+            <label for="question-type" class="form-label required">Question Type</label>
+            <select id="question-type" class="form-select" required>
+              <option value="multiple-choice">Multiple Choice</option>
+              <option value="true-false">True/False</option>
+              <option value="fill-blank">Fill in the Blank</option>
+              <option value="short-answer">Short Answer</option>
+              <option value="matching">Matching</option>
+            </select>
+          </div>
+          
+          <div class="form-field">
+            <label for="question-correct" class="form-label required">Correct Answer Index (0-3)</label>
+            <input type="number" id="question-correct" class="form-input" min="0" max="3" value="0" required>
+          </div>
+        </div>
+        
+        <div class="form-field">
+          <label class="form-label required">Answer Options</label>
+          <div class="options-editor">
+            <div class="option-row">
+              <span class="option-label">A.</span>
+              <input type="text" class="form-input option-input" data-index="0" required placeholder="Option A">
+            </div>
+            <div class="option-row">
+              <span class="option-label">B.</span>
+              <input type="text" class="form-input option-input" data-index="1" required placeholder="Option B">
+            </div>
+            <div class="option-row">
+              <span class="option-label">C.</span>
+              <input type="text" class="form-input option-input" data-index="2" required placeholder="Option C">
+            </div>
+            <div class="option-row">
+              <span class="option-label">D.</span>
+              <input type="text" class="form-input option-input" data-index="3" required placeholder="Option D">
+            </div>
+          </div>
+        </div>
+        
+        <div class="form-field">
+          <label for="question-explanation" class="form-label">Explanation (Optional)</label>
+          <textarea id="question-explanation" class="form-input form-textarea" rows="2" placeholder="Explain why this answer is correct"></textarea>
+        </div>
+        
+        <div class="form-field">
+          <label for="question-tags" class="form-label">Tags (Optional)</label>
+          <input type="text" id="question-tags" class="form-input" placeholder="comma, separated, tags">
+        </div>
+        
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" data-action="cancel">Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Question</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+  
+  <!-- Confirmation Modal -->
+  <dialog id="confirm-modal" class="modal modal-confirm" aria-labelledby="confirm-title">
+    <div class="modal-content">
+      <header class="modal-header">
+        <h3 id="confirm-title" class="modal-title">Confirm Action</h3>
+      </header>
+      
+      <div class="modal-body">
+        <p id="confirm-message">Are you sure you want to proceed?</p>
+      </div>
+      
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary" data-action="cancel">Cancel</button>
+        <button type="button" class="btn btn-danger" data-action="confirm">Confirm</button>
+      </div>
+    </div>
+  </dialog>
+  
+  <!-- Modal Root for Dynamic Modals -->
+  <div id="modal-root"></div>
+  
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container" role="status" aria-live="polite"></div>
+  
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay hidden" aria-hidden="true">
+    <div class="loading-spinner"></div>
+    <p class="loading-text">Loading...</p>
+  </div>
+  
+  <!-- Application Scripts -->
+  <script src="js/utils.js"></script>
+  <script src="modules/storage.js"></script>
+  <script src="modules/theme-manager.js"></script>
+  <script src="modules/import-export.js"></script>
+  <script src="modules/question-manager.js"></script>
+  <script src="js/quiz-generator.js"></script>
+  <script src="js/pdf-generator.js"></script>
+  <script src="js/app.js"></script>
+  
+</body>
+</html>

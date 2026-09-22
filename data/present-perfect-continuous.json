@@ -1,0 +1,149 @@
+{
+  "topic": "Present Perfect",
+  "questions": [
+    {
+      "id": "pp-e-001",
+      "topic": "Present Perfect",
+      "difficulty": "easy",
+      "question": "I _____ to Paris three times.",
+      "options": ["have been", "has been", "was", "am"],
+      "answer": 0,
+      "explanation": "Present Perfect is used for experiences. With 'I', we use 'have been'."
+    },
+    {
+      "id": "pp-e-002",
+      "topic": "Present Perfect",
+      "difficulty": "easy",
+      "question": "She _____ her homework already.",
+      "options": ["finished", "has finished", "finishes", "finish"],
+      "answer": 1,
+      "explanation": "'Already' often signals Present Perfect. Third person singular uses 'has'."
+    },
+    {
+      "id": "pp-e-003",
+      "topic": "Present Perfect",
+      "difficulty": "easy",
+      "question": "We _____ each other since 2010.",
+      "options": ["know", "knew", "have known", "knows"],
+      "answer": 2,
+      "explanation": "For states that began in the past and continue, we use Present Perfect with 'since'."
+    },
+    {
+      "id": "pp-e-004",
+      "topic": "Present Perfect",
+      "difficulty": "easy",
+      "question": "They _____ just _____ lunch.",
+      "options": ["did / eat", "have / eaten", "do / eat", "are / eating"],
+      "answer": 1,
+      "explanation": "'Just' indicates a very recent action, using Present Perfect."
+    },
+    {
+      "id": "pp-e-005",
+      "topic": "Present Perfect",
+      "difficulty": "easy",
+      "question": "_____ you ever _____ sushi?",
+      "options": ["Did / try", "Have / tried", "Do / try", "Are / trying"],
+      "answer": 1,
+      "explanation": "'Ever' asks about life experience, requiring Present Perfect."
+    },
+    {
+      "id": "pp-m-001",
+      "topic": "Present Perfect",
+      "difficulty": "medium",
+      "question": "He _____ in London for five years.",
+      "options": ["lived", "has lived", "lives", "is living"],
+      "answer": 1,
+      "explanation": "Duration from past to present uses Present Perfect with 'for'."
+    },
+    {
+      "id": "pp-m-002",
+      "topic": "Present Perfect",
+      "difficulty": "medium",
+      "question": "I _____ my keys. Can you help me find them?",
+      "options": ["lost", "have lost", "lose", "losing"],
+      "answer": 1,
+      "explanation": "Present Perfect is used when the result matters in the present."
+    },
+    {
+      "id": "pp-m-003",
+      "topic": "Present Perfect",
+      "difficulty": "medium",
+      "question": "She _____ not _____ the news yet.",
+      "options": ["did / hear", "has / heard", "does / hear", "is / hearing"],
+      "answer": 1,
+      "explanation": "'Yet' in negative sentences typically uses Present Perfect."
+    },
+    {
+      "id": "pp-m-004",
+      "topic": "Present Perfect",
+      "difficulty": "medium",
+      "question": "How long _____ you _____ here?",
+      "options": ["did / work", "have / worked", "do / work", "are / working"],
+      "answer": 1,
+      "explanation": "'How long' questions about duration use Present Perfect."
+    },
+    {
+      "id": "pp-m-005",
+      "topic": "Present Perfect",
+      "difficulty": "medium",
+      "question": "This is the best movie I _____ ever _____.",
+      "options": ["did / see", "have / seen", "do / see", "am / seeing"],
+      "answer": 1,
+      "explanation": "Superlatives with 'ever' use Present Perfect."
+    },
+    {
+      "id": "pp-h-001",
+      "topic": "Present Perfect",
+      "difficulty": "hard",
+      "question": "By the time you read this, I _____ gone.",
+      "options": ["will have", "have", "had", "will"],
+      "answer": 1,
+      "explanation": "Present Perfect can indicate a completed action whose effect continues."
+    },
+    {
+      "id": "pp-h-002",
+      "topic": "Present Perfect",
+      "difficulty": "hard",
+      "question": "It's the first time she _____ late for work.",
+      "options": ["was", "has been", "is", "had been"],
+      "answer": 1,
+      "explanation": "'It's the first time' constructions require Present Perfect."
+    },
+    {
+      "id": "pp-h-003",
+      "topic": "Present Perfect",
+      "difficulty": "hard",
+      "question": "I _____ him since he was a child.",
+      "options": ["know", "have known", "knew", "am knowing"],
+      "answer": 1,
+      "explanation": "State verbs like 'know' use Present Perfect for continuing states."
+    },
+    {
+      "id": "pp-h-004",
+      "topic": "Present Perfect",
+      "difficulty": "hard",
+      "question": "She _____ three cups of coffee this morning.",
+      "options": ["drank", "has drunk", "drinks", "is drinking"],
+      "answer": 1,
+      "explanation": "Actions completed in an unfinished time period use Present Perfect."
+    },
+    {
+      "id": "pp-a-001",
+      "topic": "Present Perfect",
+      "difficulty": "advanced",
+      "question": "Not only _____ the report, but she _____ it to the manager.",
+      "options": ["did / gave", "has she finished / has given", "she finished / gave", "does / gives"],
+      "answer": 1,
+      "explanation": "With 'not only...but also', inversion may occur and both actions use Present Perfect."
+    },
+    {
+      "id": "pp-a-002",
+      "topic": "Present Perfect",
+      "difficulty": "advanced",
+      "question": "Rarely _____ I _____ such dedication.",
+      "options": ["did / see", "have / seen", "do / see", "am / seeing"],
+      "answer": 1,
+      "explanation": "Negative adverbs like 'rarely' at the start trigger inversion with Present Perfect."
+    }
+  ]
+}

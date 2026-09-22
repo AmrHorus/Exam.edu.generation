@@ -1,0 +1,158 @@
+{
+  "topic": "Prepositions",
+  "questions": [
+    {
+      "id": "prep-e-001",
+      "topic": "Prepositions",
+      "difficulty": "easy",
+      "question": "The book is _____ the table.",
+      "options": ["on", "in", "at", "to"],
+      "answer": 0,
+      "explanation": "'On' is used for surfaces."
+    },
+    {
+      "id": "prep-e-002",
+      "topic": "Prepositions",
+      "difficulty": "easy",
+      "question": "She lives _____ London.",
+      "options": ["in", "on", "at", "to"],
+      "answer": 0,
+      "explanation": "'In' is used for cities and large places."
+    },
+    {
+      "id": "prep-e-003",
+      "topic": "Prepositions",
+      "difficulty": "easy",
+      "question": "We'll meet _____ 3 o'clock.",
+      "options": ["at", "on", "in", "to"],
+      "answer": 0,
+      "explanation": "'At' is used for specific times."
+    },
+    {
+      "id": "prep-e-004",
+      "topic": "Prepositions",
+      "difficulty": "easy",
+      "question": "The cat is hiding _____ the bed.",
+      "options": ["under", "on", "at", "to"],
+      "answer": 0,
+      "explanation": "'Under' indicates position below something."
+    },
+    {
+      "id": "prep-e-005",
+      "topic": "Prepositions",
+      "difficulty": "easy",
+      "question": "He goes to work _____ bus.",
+      "options": ["by", "on", "in", "with"],
+      "answer": 0,
+      "explanation": "'By' is used for modes of transport."
+    },
+    {
+      "id": "prep-m-001",
+      "topic": "Prepositions",
+      "difficulty": "medium",
+      "question": "I'll see you _____ Monday.",
+      "options": ["on", "in", "at", "to"],
+      "answer": 0,
+      "explanation": "'On' is used for days of the week."
+    },
+    {
+      "id": "prep-m-002",
+      "topic": "Prepositions",
+      "difficulty": "medium",
+      "question": "She was born _____ 1995.",
+      "options": ["in", "on", "at", "to"],
+      "answer": 0,
+      "explanation": "'In' is used for years."
+    },
+    {
+      "id": "prep-m-003",
+      "topic": "Prepositions",
+      "difficulty": "medium",
+      "question": "We're going _____ vacation next week.",
+      "options": ["on", "in", "at", "to"],
+      "answer": 0,
+      "explanation": "'On vacation' is a fixed expression."
+    },
+    {
+      "id": "prep-m-004",
+      "topic": "Prepositions",
+      "difficulty": "medium",
+      "question": "He's interested _____ learning Spanish.",
+      "options": ["in", "on", "at", "to"],
+      "answer": 0,
+      "explanation": "'Interested in' is a fixed preposition combination."
+    },
+    {
+      "id": "prep-m-005",
+      "topic": "Prepositions",
+      "difficulty": "medium",
+      "question": "She's good _____ playing piano.",
+      "options": ["at", "in", "on", "with"],
+      "answer": 0,
+      "explanation": "'Good at' is used for skills and abilities."
+    },
+    {
+      "id": "prep-h-001",
+      "topic": "Prepositions",
+      "difficulty": "hard",
+      "question": "I'm not afraid _____ spiders.",
+      "options": ["of", "from", "with", "about"],
+      "answer": 0,
+      "explanation": "'Afraid of' is the correct preposition combination."
+    },
+    {
+      "id": "prep-h-002",
+      "topic": "Prepositions",
+      "difficulty": "hard",
+      "question": "She apologized _____ being late.",
+      "options": ["for", "about", "on", "at"],
+      "answer": 0,
+      "explanation": "'Apologize for' is used when saying sorry for something."
+    },
+    {
+      "id": "prep-h-003",
+      "topic": "Prepositions",
+      "difficulty": "hard",
+      "question": "This knife is used _____ cutting bread.",
+      "options": ["for", "to", "with", "by"],
+      "answer": 0,
+      "explanation": "'Used for + verb-ing' expresses purpose."
+    },
+    {
+      "id": "prep-h-004",
+      "topic": "Prepositions",
+      "difficulty": "hard",
+      "question": "He accused me _____ lying.",
+      "options": ["of", "for", "about", "with"],
+      "answer": 0,
+      "explanation": "'Accuse someone of' is the correct preposition combination."
+    },
+    {
+      "id": "prep-a-001",
+      "topic": "Prepositions",
+      "difficulty": "advanced",
+      "question": "The success of the project depends _____ everyone working together.",
+      "options": ["on", "of", "in", "at"],
+      "answer": 0,
+      "explanation": "'Depend on' means to rely on or be determined by."
+    },
+    {
+      "id": "prep-a-002",
+      "topic": "Prepositions",
+      "difficulty": "advanced",
+      "question": "She has a talent _____ music.",
+      "options": ["for", "in", "at", "with"],
+      "answer": 0,
+      "explanation": "'Talent for' is used to describe natural ability in an area."
+    },
+    {
+      "id": "prep-a-003",
+      "topic": "Prepositions",
+      "difficulty": "advanced",
+      "question": "We need to comply _____ the regulations.",
+      "options": ["with", "to", "for", "on"],
+      "answer": 0,
+      "explanation": "'Comply with' means to act according to rules or requests."
+    }
+  ]
+}

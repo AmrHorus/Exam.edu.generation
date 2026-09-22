@@ -1,0 +1,149 @@
+{
+  "topic": "Going to (Future)",
+  "questions": [
+    {
+      "id": "gt-e-001",
+      "topic": "Going to (Future)",
+      "difficulty": "easy",
+      "question": "I _____ visit my grandparents this weekend.",
+      "options": ["am going to", "will", "go to", "went to"],
+      "answer": 0,
+      "explanation": "'Going to' expresses planned future actions."
+    },
+    {
+      "id": "gt-e-002",
+      "topic": "Going to (Future)",
+      "difficulty": "easy",
+      "question": "Look at those clouds! It _____ rain.",
+      "options": ["is going to", "will", "goes to", "went to"],
+      "answer": 0,
+      "explanation": "'Going to' is used for predictions based on present evidence."
+    },
+    {
+      "id": "gt-e-003",
+      "topic": "Going to (Future)",
+      "difficulty": "easy",
+      "question": "She _____ study medicine at university.",
+      "options": ["is going to", "will", "goes to", "gone to"],
+      "answer": 0,
+      "explanation": "'Going to' expresses intentions and plans."
+    },
+    {
+      "id": "gt-e-004",
+      "topic": "Going to (Future)",
+      "difficulty": "easy",
+      "question": "They _____ buy a new car next month.",
+      "options": ["are going to", "will", "go to", "went to"],
+      "answer": 0,
+      "explanation": "Plural subjects use 'are going to'."
+    },
+    {
+      "id": "gt-e-005",
+      "topic": "Going to (Future)",
+      "difficulty": "easy",
+      "question": "We _____ not go to the beach today.",
+      "options": ["are", "will", "do", "did"],
+      "answer": 0,
+      "explanation": "Negative 'going to' uses 'am/is/are not going to'."
+    },
+    {
+      "id": "gt-m-001",
+      "topic": "Going to (Future)",
+      "difficulty": "medium",
+      "question": "What _____ do after graduation?",
+      "options": ["are you going to", "will you", "do you go to", "did you go to"],
+      "answer": 0,
+      "explanation": "Questions about future plans use 'going to'."
+    },
+    {
+      "id": "gt-m-002",
+      "topic": "Going to (Future)",
+      "difficulty": "medium",
+      "question": "He's bought the paint. He _____ his room.",
+      "options": ["is going to paint", "will paint", "paints", "painted"],
+      "answer": 0,
+      "explanation": "Evidence of preparation indicates 'going to'."
+    },
+    {
+      "id": "gt-m-003",
+      "topic": "Going to (Future)",
+      "difficulty": "medium",
+      "question": "I've made up my mind. I _____ leave.",
+      "options": ["am going to", "will", "go to", "went to"],
+      "answer": 0,
+      "explanation": "Decided intentions use 'going to'."
+    },
+    {
+      "id": "gt-m-004",
+      "topic": "Going to (Future)",
+      "difficulty": "medium",
+      "question": "Be careful! You _____ drop that!",
+      "options": ["are going to", "will", "go to", "went to"],
+      "answer": 0,
+      "explanation": "Warnings about imminent events use 'going to'."
+    },
+    {
+      "id": "gt-m-005",
+      "topic": "Going to (Future)",
+      "difficulty": "medium",
+      "question": "How long _____ stay in London?",
+      "options": ["are you going to", "will you", "do you go to", "did you go to"],
+      "answer": 0,
+      "explanation": "Questions about planned duration use 'going to'."
+    },
+    {
+      "id": "gt-h-001",
+      "topic": "Going to (Future)",
+      "difficulty": "hard",
+      "question": "The schedule says the train _____ at 6 PM.",
+      "options": ["is going to leave", "leaves", "will leave", "left"],
+      "answer": 1,
+      "explanation": "Timetabled events typically use Present Simple, not 'going to'."
+    },
+    {
+      "id": "gt-h-002",
+      "topic": "Going to (Future)",
+      "difficulty": "hard",
+      "question": "I think she _____ accept the offer.",
+      "options": ["is going to", "will", "goes to", "went to"],
+      "answer": 1,
+      "explanation": "With 'I think' for predictions without evidence, 'will' is more common."
+    },
+    {
+      "id": "gt-h-003",
+      "topic": "Going to (Future)",
+      "difficulty": "hard",
+      "question": "They've booked the tickets. They _____ to Japan.",
+      "options": ["are going to fly", "will fly", "fly", "flew"],
+      "answer": 0,
+      "explanation": "Booked arrangements indicate definite plans using 'going to'."
+    },
+    {
+      "id": "gt-h-004",
+      "topic": "Going to (Future)",
+      "difficulty": "hard",
+      "question": "Oh no! The baby _____ fall!",
+      "options": ["is going to", "will", "goes to", "went to"],
+      "answer": 0,
+      "explanation": "Immediate predictions based on visible evidence use 'going to'."
+    },
+    {
+      "id": "gt-a-001",
+      "topic": "Going to (Future)",
+      "difficulty": "advanced",
+      "question": "Not only _____ start a business, but he _____ also invest in property.",
+      "options": ["he is going to / is", "is he going to / is", "he will / will", "will he / will"],
+      "answer": 1,
+      "explanation": "Inversion with 'not only' applies to 'going to' constructions."
+    },
+    {
+      "id": "gt-a-002",
+      "topic": "Going to (Future)",
+      "difficulty": "advanced",
+      "question": "There's no way they _____ finish on time.",
+      "options": ["are going to", "will", "go to", "went to"],
+      "answer": 0,
+      "explanation": "Both 'going to' and 'will' work here, but 'going to' emphasizes the evident impossibility."
+    }
+  ]
+}

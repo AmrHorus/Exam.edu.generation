@@ -1,0 +1,158 @@
+{
+  "topic": "Articles",
+  "questions": [
+    {
+      "id": "art-e-001",
+      "topic": "Articles",
+      "difficulty": "easy",
+      "question": "I saw _____ dog in the park.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 0,
+      "explanation": "'A' is used before singular countable nouns when mentioned for the first time."
+    },
+    {
+      "id": "art-e-002",
+      "topic": "Articles",
+      "difficulty": "easy",
+      "question": "She is _____ doctor.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 0,
+      "explanation": "'A' is used before professions."
+    },
+    {
+      "id": "art-e-003",
+      "topic": "Articles",
+      "difficulty": "easy",
+      "question": "He ate _____ apple for breakfast.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 1,
+      "explanation": "'An' is used before words starting with a vowel sound."
+    },
+    {
+      "id": "art-e-004",
+      "topic": "Articles",
+      "difficulty": "easy",
+      "question": "_____ sun rises in the east.",
+      "options": ["A", "An", "The", "-"],
+      "answer": 2,
+      "explanation": "'The' is used for unique things (there's only one sun)."
+    },
+    {
+      "id": "art-e-005",
+      "topic": "Articles",
+      "difficulty": "easy",
+      "question": "I love _____ chocolate.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 3,
+      "explanation": "No article is used with uncountable nouns when speaking generally."
+    },
+    {
+      "id": "art-m-001",
+      "topic": "Articles",
+      "difficulty": "medium",
+      "question": "Can you pass me _____ salt, please?",
+      "options": ["a", "an", "the", "-"],
+      "answer": 2,
+      "explanation": "'The' is used when both speaker and listener know what is being referred to."
+    },
+    {
+      "id": "art-m-002",
+      "topic": "Articles",
+      "difficulty": "medium",
+      "question": "She goes to school by _____ bus.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 3,
+      "explanation": "No article is used with modes of transport after 'by'."
+    },
+    {
+      "id": "art-m-003",
+      "topic": "Articles",
+      "difficulty": "medium",
+      "question": "He is _____ honest man.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 1,
+      "explanation": "'An' is used before 'honest' because the 'h' is silent, creating a vowel sound."
+    },
+    {
+      "id": "art-m-004",
+      "topic": "Articles",
+      "difficulty": "medium",
+      "question": "We visited _____ United States last year.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 2,
+      "explanation": "'The' is used with country names that include 'States', 'Kingdom', or 'Republic'."
+    },
+    {
+      "id": "art-m-005",
+      "topic": "Articles",
+      "difficulty": "medium",
+      "question": "She plays _____ piano very well.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 2,
+      "explanation": "'The' is used with musical instruments."
+    },
+    {
+      "id": "art-h-001",
+      "topic": "Articles",
+      "difficulty": "hard",
+      "question": "_____ rich should help _____ poor.",
+      "options": ["The / the", "A / the", "- / -", "The / -"],
+      "answer": 0,
+      "explanation": "'The + adjective' can refer to a group of people as a whole."
+    },
+    {
+      "id": "art-h-002",
+      "topic": "Articles",
+      "difficulty": "hard",
+      "question": "He was sent to _____ prison for theft.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 3,
+      "explanation": "No article is used when referring to the purpose of an institution (being a prisoner)."
+    },
+    {
+      "id": "art-h-003",
+      "topic": "Articles",
+      "difficulty": "hard",
+      "question": "She has _____ MBA from Harvard.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 1,
+      "explanation": "'An' is used before 'MBA' because 'M' is pronounced with an initial vowel sound."
+    },
+    {
+      "id": "art-h-004",
+      "topic": "Articles",
+      "difficulty": "hard",
+      "question": "I'll see you _____ next week.",
+      "options": ["in", "on", "at", "-"],
+      "answer": 3,
+      "explanation": "No preposition or article is used with 'next week', 'last week', etc."
+    },
+    {
+      "id": "art-a-001",
+      "topic": "Articles",
+      "difficulty": "advanced",
+      "question": "This is _____ best movie I've ever seen!",
+      "options": ["a", "an", "the", "-"],
+      "answer": 2,
+      "explanation": "'The' is used with superlatives."
+    },
+    {
+      "id": "art-a-002",
+      "topic": "Articles",
+      "difficulty": "advanced",
+      "question": "_____ Mr. Smith is waiting outside.",
+      "options": ["A", "An", "The", "-"],
+      "answer": 3,
+      "explanation": "No article is used before titles with proper names."
+    },
+    {
+      "id": "art-a-003",
+      "topic": "Articles",
+      "difficulty": "advanced",
+      "question": "She arrived _____ hour late.",
+      "options": ["a", "an", "the", "-"],
+      "answer": 1,
+      "explanation": "'An' is used before 'hour' because the 'h' is silent."
+    }
+  ]
+}

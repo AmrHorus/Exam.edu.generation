@@ -1,0 +1,158 @@
+{
+  "topic": "Present Continuous",
+  "questions": [
+    {
+      "id": "pc-e-001",
+      "topic": "Present Continuous",
+      "difficulty": "easy",
+      "question": "She _____ a book right now.",
+      "options": ["reads", "is reading", "read", "reading"],
+      "answer": 1,
+      "explanation": "Present Continuous uses 'am/is/are + verb-ing' for actions happening now."
+    },
+    {
+      "id": "pc-e-002",
+      "topic": "Present Continuous",
+      "difficulty": "easy",
+      "question": "They _____ football in the park.",
+      "options": ["play", "are playing", "plays", "played"],
+      "answer": 1,
+      "explanation": "With 'they', we use 'are + verb-ing' for Present Continuous."
+    },
+    {
+      "id": "pc-e-003",
+      "topic": "Present Continuous",
+      "difficulty": "easy",
+      "question": "I _____ my homework at the moment.",
+      "options": ["do", "am doing", "does", "did"],
+      "answer": 1,
+      "explanation": "With 'I', we use 'am + verb-ing' for Present Continuous."
+    },
+    {
+      "id": "pc-e-004",
+      "topic": "Present Continuous",
+      "difficulty": "easy",
+      "question": "He _____ to music now.",
+      "options": ["listens", "is listening", "listen", "listening"],
+      "answer": 1,
+      "explanation": "Present Continuous: 'is + listening' for third-person singular."
+    },
+    {
+      "id": "pc-e-005",
+      "topic": "Present Continuous",
+      "difficulty": "easy",
+      "question": "We _____ dinner at the moment.",
+      "options": ["have", "are having", "has", "had"],
+      "answer": 1,
+      "explanation": "With 'we', we use 'are + verb-ing' for Present Continuous."
+    },
+    {
+      "id": "pc-m-001",
+      "topic": "Present Continuous",
+      "difficulty": "medium",
+      "question": "Look! It _____ outside.",
+      "options": ["snows", "is snowing", "snow", "snowed"],
+      "answer": 1,
+      "explanation": "'Look!' indicates an action happening now, requiring Present Continuous."
+    },
+    {
+      "id": "pc-m-002",
+      "topic": "Present Continuous",
+      "difficulty": "medium",
+      "question": "_____ you _____ to the radio?",
+      "options": ["Do / listen", "Are / listening", "Does / listen", "Is / listening"],
+      "answer": 1,
+      "explanation": "Question form of Present Continuous: 'Are + subject + verb-ing'"
+    },
+    {
+      "id": "pc-m-003",
+      "topic": "Present Continuous",
+      "difficulty": "medium",
+      "question": "She _____ not working today.",
+      "options": ["does", "is", "do", "are"],
+      "answer": 1,
+      "explanation": "Negative Present Continuous: 'is not + verb-ing' for third-person singular."
+    },
+    {
+      "id": "pc-m-004",
+      "topic": "Present Continuous",
+      "difficulty": "medium",
+      "question": "Why _____ he _____ so loudly?",
+      "options": ["does / talk", "is / talking", "do / talk", "are / talking"],
+      "answer": 1,
+      "explanation": "Question with 'why' about current action uses Present Continuous."
+    },
+    {
+      "id": "pc-m-005",
+      "topic": "Present Continuous",
+      "difficulty": "medium",
+      "question": "The baby _____ right now.",
+      "options": ["sleeps", "is sleeping", "sleep", "slept"],
+      "answer": 1,
+      "explanation": "'Right now' indicates Present Continuous tense."
+    },
+    {
+      "id": "pc-h-001",
+      "topic": "Present Continuous",
+      "difficulty": "hard",
+      "question": "I _____ you are making a mistake.",
+      "options": ["think", "am thinking", "thinks", "thought"],
+      "answer": 0,
+      "explanation": "'Think' when expressing opinion is a stative verb and is not used in continuous form."
+    },
+    {
+      "id": "pc-h-002",
+      "topic": "Present Continuous",
+      "difficulty": "hard",
+      "question": "She _____ more confident these days.",
+      "options": ["becomes", "is becoming", "become", "became"],
+      "answer": 1,
+      "explanation": "Present Continuous can express changing or developing situations."
+    },
+    {
+      "id": "pc-h-003",
+      "topic": "Present Continuous",
+      "difficulty": "hard",
+      "question": "He always _____ about his work.",
+      "options": ["complains", "is complaining", "complain", "complained"],
+      "answer": 1,
+      "explanation": "Present Continuous with 'always' expresses annoyance about a repeated action."
+    },
+    {
+      "id": "pc-h-004",
+      "topic": "Present Continuous",
+      "difficulty": "hard",
+      "question": "This term I _____ extra courses.",
+      "options": ["take", "am taking", "takes", "took"],
+      "answer": 1,
+      "explanation": "Present Continuous can describe temporary situations around the present time."
+    },
+    {
+      "id": "pc-a-001",
+      "topic": "Present Continuous",
+      "difficulty": "advanced",
+      "question": "More and more people _____ electric cars nowadays.",
+      "options": ["buy", "are buying", "buys", "bought"],
+      "answer": 1,
+      "explanation": "Present Continuous expresses a trend or changing situation."
+    },
+    {
+      "id": "pc-a-002",
+      "topic": "Present Continuous",
+      "difficulty": "advanced",
+      "question": "I _____ to Japan next month.",
+      "options": ["fly", "am flying", "flies", "flew"],
+      "answer": 1,
+      "explanation": "Present Continuous can express future arrangements that have been planned."
+    },
+    {
+      "id": "pc-a-003",
+      "topic": "Present Continuous",
+      "difficulty": "advanced",
+      "question": "You _____ very helpful today. Thank you!",
+      "options": ["are", "are being", "be", "were"],
+      "answer": 1,
+      "explanation": "'Being' + adjective describes temporary behavior, not permanent characteristics."
+    }
+  ]
+}

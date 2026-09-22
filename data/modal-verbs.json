@@ -1,0 +1,158 @@
+{
+  "topic": "Modal Verbs",
+  "questions": [
+    {
+      "id": "mv-e-001",
+      "topic": "Modal Verbs",
+      "difficulty": "easy",
+      "question": "You _____ wear a seatbelt in the car.",
+      "options": ["must", "should", "might", "could"],
+      "answer": 0,
+      "explanation": "'Must' expresses strong obligation or necessity."
+    },
+    {
+      "id": "mv-e-002",
+      "topic": "Modal Verbs",
+      "difficulty": "easy",
+      "question": "She _____ speak three languages.",
+      "options": ["can", "must", "should", "ought to"],
+      "answer": 0,
+      "explanation": "'Can' expresses ability."
+    },
+    {
+      "id": "mv-e-003",
+      "topic": "Modal Verbs",
+      "difficulty": "easy",
+      "question": "_____ I borrow your pen?",
+      "options": ["Can", "Must", "Should", "Ought to"],
+      "answer": 0,
+      "explanation": "'Can' is used to ask for permission informally."
+    },
+    {
+      "id": "mv-e-004",
+      "topic": "Modal Verbs",
+      "difficulty": "easy",
+      "question": "It's cold. You _____ take a jacket.",
+      "options": ["should", "must", "can", "may"],
+      "answer": 0,
+      "explanation": "'Should' gives advice or recommendation."
+    },
+    {
+      "id": "mv-e-005",
+      "topic": "Modal Verbs",
+      "difficulty": "easy",
+      "question": "He _____ be at home. I saw him there.",
+      "options": ["must", "can't", "shouldn't", "might not"],
+      "answer": 0,
+      "explanation": "'Must' expresses logical certainty or deduction."
+    },
+    {
+      "id": "mv-m-001",
+      "topic": "Modal Verbs",
+      "difficulty": "medium",
+      "question": "You _____ smoke in the hospital. It's forbidden.",
+      "options": ["mustn't", "don't have to", "shouldn't", "needn't"],
+      "answer": 0,
+      "explanation": "'Mustn't' expresses prohibition - something that is not allowed."
+    },
+    {
+      "id": "mv-m-002",
+      "topic": "Modal Verbs",
+      "difficulty": "medium",
+      "question": "I'm not sure. She _____ come to the party.",
+      "options": ["might", "must", "should", "has to"],
+      "answer": 0,
+      "explanation": "'Might' expresses possibility when we are uncertain."
+    },
+    {
+      "id": "mv-m-003",
+      "topic": "Modal Verbs",
+      "difficulty": "medium",
+      "question": "You _____ pay. It's free!",
+      "options": ["don't have to", "mustn't", "shouldn't", "can't"],
+      "answer": 0,
+      "explanation": "'Don't have to' means there is no necessity or obligation."
+    },
+    {
+      "id": "mv-m-004",
+      "topic": "Modal Verbs",
+      "difficulty": "medium",
+      "question": "That _____ be John. He's in Paris this week.",
+      "options": ["can't", "mustn't", "shouldn't", "might not"],
+      "answer": 0,
+      "explanation": "'Can't' expresses negative deduction - something we believe is impossible."
+    },
+    {
+      "id": "mv-m-005",
+      "topic": "Modal Verbs",
+      "difficulty": "medium",
+      "question": "Students _____ arrive on time for class.",
+      "options": ["must", "might", "could", "may"],
+      "answer": 0,
+      "explanation": "'Must' expresses a rule or requirement."
+    },
+    {
+      "id": "mv-h-001",
+      "topic": "Modal Verbs",
+      "difficulty": "hard",
+      "question": "You _____ have told me earlier!",
+      "options": ["should", "must", "can", "may"],
+      "answer": 0,
+      "explanation": "'Should have + past participle' expresses criticism about a past action."
+    },
+    {
+      "id": "mv-h-002",
+      "topic": "Modal Verbs",
+      "difficulty": "hard",
+      "question": "The lights are off. They _____ have gone out.",
+      "options": ["must", "can't", "shouldn't", "might not"],
+      "answer": 0,
+      "explanation": "'Must have + past participle' expresses logical deduction about the past."
+    },
+    {
+      "id": "mv-h-003",
+      "topic": "Modal Verbs",
+      "difficulty": "hard",
+      "question": "I _____ have finished the report, but I ran out of time.",
+      "options": ["could", "must", "should", "will"],
+      "answer": 0,
+      "explanation": "'Could have + past participle' expresses past ability that wasn't used."
+    },
+    {
+      "id": "mv-h-004",
+      "topic": "Modal Verbs",
+      "difficulty": "hard",
+      "question": "He _____ be working late. His car is still here.",
+      "options": ["must", "can't", "shouldn't", "might not"],
+      "answer": 0,
+      "explanation": "'Must' expresses a logical conclusion based on evidence."
+    },
+    {
+      "id": "mv-a-001",
+      "topic": "Modal Verbs",
+      "difficulty": "advanced",
+      "question": "You _____ have seen her at the meeting. She was definitely there.",
+      "options": ["must", "can't", "shouldn't", "needn't"],
+      "answer": 0,
+      "explanation": "'Must have + past participle' expresses near certainty about a past event."
+    },
+    {
+      "id": "mv-a-002",
+      "topic": "Modal Verbs",
+      "difficulty": "advanced",
+      "question": "I'd rather you _____ smoke in here.",
+      "options": ["didn't", "don't", "not", "won't"],
+      "answer": 0,
+      "explanation": "After 'I'd rather + object', we use past simple for present/future preferences."
+    },
+    {
+      "id": "mv-a-003",
+      "topic": "Modal Verbs",
+      "difficulty": "advanced",
+      "question": "Need I _____ anything else?",
+      "options": ["bring", "to bring", "bringing", "brought"],
+      "answer": 0,
+      "explanation": "'Need' as a modal verb (in questions/negatives) is followed by bare infinitive."
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic": "Present Simple",
+  "questions": [
+    {
+      "id": "ps-e-001",
+      "topic": "Present Simple",
+      "difficulty": "easy",
+      "question": "She _____ to school every day.",
+      "options": ["go", "goes", "going", "gone"],
+      "answer": 1,
+      "explanation": "The third-person singular subject 'she' requires 'goes' in the Present Simple."
+    },
+    {
+      "id": "ps-e-002",
+      "topic": "Present Simple",
+      "difficulty": "easy",
+      "question": "They _____ football on weekends.",
+      "options": ["plays", "play", "playing", "played"],
+      "answer": 1,
+      "explanation": "With plural subject 'they', we use the base form 'play' in Present Simple."
+    },
+    {
+      "id": "ps-e-003",
+      "topic": "Present Simple",
+      "difficulty": "easy",
+      "question": "I _____ coffee in the morning.",
+      "options": ["drinks", "drink", "drinking", "drank"],
+      "answer": 1,
+      "explanation": "With 'I', we use the base form 'drink' in Present Simple."
+    },
+    {
+      "id": "ps-e-004",
+      "topic": "Present Simple",
+      "difficulty": "easy",
+      "question": "He _____ TV in the evening.",
+      "options": ["watch", "watches", "watching", "watched"],
+      "answer": 1,
+      "explanation": "Third-person singular 'he' requires 'watches' (add -es for verbs ending in -ch)."
+    },
+    {
+      "id": "ps-e-005",
+      "topic": "Present Simple",
+      "difficulty": "easy",
+      "question": "We _____ in London.",
+      "options": ["lives", "live", "living", "lived"],
+      "answer": 1,
+      "explanation": "With 'we', we use the base form 'live' in Present Simple."
+    },
+    {
+      "id": "ps-m-001",
+      "topic": "Present Simple",
+      "difficulty": "medium",
+      "question": "The sun _____ in the east.",
+      "options": ["rise", "rises", "rising", "rose"],
+      "answer": 1,
+      "explanation": "This is a general truth. Third-person singular 'sun' requires 'rises'."
+    },
+    {
+      "id": "ps-m-002",
+      "topic": "Present Simple",
+      "difficulty": "medium",
+      "question": "My brother _____ three languages.",
+      "options": ["speak", "speaks", "speaking", "spoke"],
+      "answer": 1,
+      "explanation": "Third-person singular 'brother' requires 'speaks'."
+    },
+    {
+      "id": "ps-m-003",
+      "topic": "Present Simple",
+      "difficulty": "medium",
+      "question": "_____ you like pizza?",
+      "options": ["Does", "Do", "Are", "Is"],
+      "answer": 1,
+      "explanation": "For questions with 'you', we use the auxiliary 'do'."
+    },
+    {
+      "id": "ps-m-004",
+      "topic": "Present Simple",
+      "difficulty": "medium",
+      "question": "She _____ not understand the lesson.",
+      "options": ["do", "does", "is", "are"],
+      "answer": 1,
+      "explanation": "For negative sentences with third-person singular, we use 'does not'."
+    },
+    {
+      "id": "ps-m-005",
+      "topic": "Present Simple",
+      "difficulty": "medium",
+      "question": "How often _____ she visit her grandparents?",
+      "options": ["do", "does", "is", "are"],
+      "answer": 1,
+      "explanation": "For questions with third-person singular 'she', we use 'does'."
+    },
+    {
+      "id": "ps-h-001",
+      "topic": "Present Simple",
+      "difficulty": "hard",
+      "question": "Neither of the students _____ the answer.",
+      "options": ["know", "knows", "knowing", "knew"],
+      "answer": 1,
+      "explanation": "'Neither' is singular and requires the third-person singular verb 'knows'."
+    },
+    {
+      "id": "ps-h-002",
+      "topic": "Present Simple",
+      "difficulty": "hard",
+      "question": "Everyone in the class _____ required to take the test.",
+      "options": ["are", "is", "were", "be"],
+      "answer": 1,
+      "explanation": "'Everyone' is an indefinite pronoun that is grammatically singular, requiring 'is'."
+    },
+    {
+      "id": "ps-h-003",
+      "topic": "Present Simple",
+      "difficulty": "hard",
+      "question": "The committee _____ divided on this issue.",
+      "options": ["are", "is", "were", "been"],
+      "answer": 0,
+      "explanation": "When emphasizing individual members acting separately, 'committee' can take a plural verb 'are'."
+    },
+    {
+      "id": "ps-h-004",
+      "topic": "Present Simple",
+      "difficulty": "hard",
+      "question": "Not only the students but also the teacher _____ excited about the trip.",
+      "options": ["are", "is", "were", "have been"],
+      "answer": 1,
+      "explanation": "With 'not only...but also', the verb agrees with the closer subject ('teacher'), which is singular."
+    },
+    {
+      "id": "ps-a-001",
+      "topic": "Present Simple",
+      "difficulty": "advanced",
+      "question": "Scarcely _____ she finish one task when another arrives.",
+      "options": ["does", "did", "has", "had"],
+      "answer": 0,
+      "explanation": "In formal English with 'scarcely', we use inversion with 'does' for present simple."
+    },
+    {
+      "id": "ps-a-002",
+      "topic": "Present Simple",
+      "difficulty": "advanced",
+      "question": "Here _____ the documents you requested.",
+      "options": ["is", "are", "was", "were"],
+      "answer": 1,
+      "explanation": "In sentences beginning with 'here', the subject follows the verb. 'Documents' is plural, so we use 'are'."
+    },
+    {
+      "id": "ps-a-003",
+      "topic": "Present Simple",
+      "difficulty": "advanced",
+      "question": "Five miles _____ a long distance to walk.",
+      "options": ["are", "is", "were", "have been"],
+      "answer": 1,
+      "explanation": "Distances, amounts, and periods of time are treated as singular units, requiring 'is'."
+    }
+  ]
+}

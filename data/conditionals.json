@@ -1,0 +1,158 @@
+{
+  "topic": "Conditionals",
+  "questions": [
+    {
+      "id": "cond-e-001",
+      "topic": "Conditionals",
+      "difficulty": "easy",
+      "question": "If it rains, I _____ stay at home.",
+      "options": ["will", "would", "would have", "had"],
+      "answer": 0,
+      "explanation": "First Conditional: If + present simple, will + base verb for real possibilities."
+    },
+    {
+      "id": "cond-e-002",
+      "topic": "Conditionals",
+      "difficulty": "easy",
+      "question": "If I had money, I _____ buy a car.",
+      "options": ["will", "would", "would have", "had"],
+      "answer": 1,
+      "explanation": "Second Conditional: If + past simple, would + base verb for hypothetical situations."
+    },
+    {
+      "id": "cond-e-003",
+      "topic": "Conditionals",
+      "difficulty": "easy",
+      "question": "If she studies hard, she _____ pass the exam.",
+      "options": ["will", "would", "would have", "had"],
+      "answer": 0,
+      "explanation": "First Conditional expresses a likely future result."
+    },
+    {
+      "id": "cond-e-004",
+      "topic": "Conditionals",
+      "difficulty": "easy",
+      "question": "If I were you, I _____ apologize.",
+      "options": ["will", "would", "would have", "had"],
+      "answer": 1,
+      "explanation": "Second Conditional with 'If I were you' gives advice."
+    },
+    {
+      "id": "cond-e-005",
+      "topic": "Conditionals",
+      "difficulty": "easy",
+      "question": "They would travel if they _____ time.",
+      "options": ["have", "had", "have had", "will have"],
+      "answer": 1,
+      "explanation": "Second Conditional: past simple in the if-clause."
+    },
+    {
+      "id": "cond-m-001",
+      "topic": "Conditionals",
+      "difficulty": "medium",
+      "question": "If I _____ known about the meeting, I would have attended.",
+      "options": ["have", "had", "has", "having"],
+      "answer": 1,
+      "explanation": "Third Conditional: If + past perfect, would have + past participle for unreal past."
+    },
+    {
+      "id": "cond-m-002",
+      "topic": "Conditionals",
+      "difficulty": "medium",
+      "question": "She would have passed if she _____ harder.",
+      "options": ["studies", "studied", "had studied", "study"],
+      "answer": 2,
+      "explanation": "Third Conditional requires past perfect in the if-clause."
+    },
+    {
+      "id": "cond-m-003",
+      "topic": "Conditionals",
+      "difficulty": "medium",
+      "question": "If you heat ice, it _____.",
+      "options": ["melts", "melted", "will melt", "would melt"],
+      "answer": 0,
+      "explanation": "Zero Conditional: If + present, present for scientific facts and general truths."
+    },
+    {
+      "id": "cond-m-004",
+      "topic": "Conditionals",
+      "difficulty": "medium",
+      "question": "I would help you if I _____ how.",
+      "options": ["know", "knew", "had known", "will know"],
+      "answer": 1,
+      "explanation": "Second Conditional: past simple 'knew' for hypothetical present situation."
+    },
+    {
+      "id": "cond-m-005",
+      "topic": "Conditionals",
+      "difficulty": "medium",
+      "question": "What would you do if you _____ a million dollars?",
+      "options": ["win", "won", "had won", "will win"],
+      "answer": 1,
+      "explanation": "Second Conditional asks about an imaginary situation."
+    },
+    {
+      "id": "cond-h-001",
+      "topic": "Conditionals",
+      "difficulty": "hard",
+      "question": "If he _____ earlier, he wouldn't have missed the train.",
+      "options": ["leaves", "left", "had left", "would leave"],
+      "answer": 2,
+      "explanation": "Third Conditional: 'had left' (past perfect) for an unreal past condition."
+    },
+    {
+      "id": "cond-h-002",
+      "topic": "Conditionals",
+      "difficulty": "hard",
+      "question": "Had I known, I _____ helped you.",
+      "options": ["will have", "would have", "would", "had"],
+      "answer": 1,
+      "explanation": "Inverted Third Conditional: 'Had + subject + past participle' replaces 'If + subject + had + past participle'"
+    },
+    {
+      "id": "cond-h-003",
+      "topic": "Conditionals",
+      "difficulty": "hard",
+      "question": "If only I _____ richer!",
+      "options": ["am", "was", "were", "have been"],
+      "answer": 2,
+      "explanation": "'If only' expresses a wish. 'Were' is used for all persons in formal English."
+    },
+    {
+      "id": "cond-h-004",
+      "topic": "Conditionals",
+      "difficulty": "hard",
+      "question": "Should you need any help, please _____ me.",
+      "options": ["call", "called", "will call", "would call"],
+      "answer": 0,
+      "explanation": "Inverted First Conditional: 'Should + subject + verb' replaces 'If + subject + should + verb'"
+    },
+    {
+      "id": "cond-a-001",
+      "topic": "Conditionals",
+      "difficulty": "advanced",
+      "question": "_____ it not for your help, I would have failed.",
+      "options": ["If", "Were", "Had", "Should"],
+      "answer": 1,
+      "explanation": "Inverted Second Conditional: 'Were it not for' = 'If it were not for'"
+    },
+    {
+      "id": "cond-a-002",
+      "topic": "Conditionals",
+      "difficulty": "advanced",
+      "question": "If I _____ to warn you, you would have been in serious danger.",
+      "options": ["didn't try", "hadn't tried", "haven't tried", "don't try"],
+      "answer": 1,
+      "explanation": "Third Conditional negative: 'hadn't tried' for unreal past action."
+    },
+    {
+      "id": "cond-a-003",
+      "topic": "Conditionals",
+      "difficulty": "advanced",
+      "question": "Mixed Conditional: If I had studied medicine, I _____ a doctor now.",
+      "options": ["would be", "will be", "would have been", "had been"],
+      "answer": 0,
+      "explanation": "Mixed Conditional: past perfect in if-clause, would + base verb for present result of past condition."
+    }
+  ]
+}

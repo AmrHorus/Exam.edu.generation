@@ -1,0 +1,149 @@
+{
+  "topic": "Future Simple",
+  "questions": [
+    {
+      "id": "fs-e-001",
+      "topic": "Future Simple",
+      "difficulty": "easy",
+      "question": "I _____ you tomorrow.",
+      "options": ["will call", "call", "called", "calling"],
+      "answer": 0,
+      "explanation": "Future Simple is formed with 'will + base verb' for predictions and promises."
+    },
+    {
+      "id": "fs-e-002",
+      "topic": "Future Simple",
+      "difficulty": "easy",
+      "question": "She _____ late for the meeting.",
+      "options": ["will be", "is", "was", "been"],
+      "answer": 0,
+      "explanation": "Future Simple predicts a future state or condition."
+    },
+    {
+      "id": "fs-e-003",
+      "topic": "Future Simple",
+      "difficulty": "easy",
+      "question": "They _____ not come to the party.",
+      "options": ["will", "do", "are", "did"],
+      "answer": 0,
+      "explanation": "Negative Future Simple uses 'will not' or 'won't'."
+    },
+    {
+      "id": "fs-e-004",
+      "topic": "Future Simple",
+      "difficulty": "easy",
+      "question": "_____ you help me with this?",
+      "options": ["Will", "Do", "Are", "Did"],
+      "answer": 0,
+      "explanation": "Questions about future willingness use 'Will' at the start."
+    },
+    {
+      "id": "fs-e-005",
+      "topic": "Future Simple",
+      "difficulty": "easy",
+      "question": "It _____ sunny next week.",
+      "options": ["will be", "is", "was", "has been"],
+      "answer": 0,
+      "explanation": "Weather predictions use Future Simple."
+    },
+    {
+      "id": "fs-m-001",
+      "topic": "Future Simple",
+      "difficulty": "medium",
+      "question": "I think he _____ the job.",
+      "options": ["will get", "gets", "got", "getting"],
+      "answer": 0,
+      "explanation": "'I think' often introduces a prediction using Future Simple."
+    },
+    {
+      "id": "fs-m-002",
+      "topic": "Future Simple",
+      "difficulty": "medium",
+      "question": "Wait here and I _____ you a coffee.",
+      "options": ["will get", "get", "got", "getting"],
+      "answer": 0,
+      "explanation": "Spontaneous decisions use Future Simple."
+    },
+    {
+      "id": "fs-m-003",
+      "topic": "Future Simple",
+      "difficulty": "medium",
+      "question": "I promise I _____ tell anyone.",
+      "options": ["will not", "do not", "am not", "did not"],
+      "answer": 0,
+      "explanation": "Promises use Future Simple."
+    },
+    {
+      "id": "fs-m-004",
+      "topic": "Future Simple",
+      "difficulty": "medium",
+      "question": "The concert _____ at 8 PM.",
+      "options": ["will start", "starts", "started", "starting"],
+      "answer": 0,
+      "explanation": "Scheduled future events can use Future Simple."
+    },
+    {
+      "id": "fs-m-005",
+      "topic": "Future Simple",
+      "difficulty": "medium",
+      "question": "Perhaps we _____ see them later.",
+      "options": ["will", "do", "are", "have"],
+      "answer": 0,
+      "explanation": "'Perhaps' indicates uncertainty about the future."
+    },
+    {
+      "id": "fs-h-001",
+      "topic": "Future Simple",
+      "difficulty": "hard",
+      "question": "By next year, she _____ her degree.",
+      "options": ["will complete", "completes", "completed", "will have completed"],
+      "answer": 0,
+      "explanation": "Future Simple can express completion by a future time."
+    },
+    {
+      "id": "fs-h-002",
+      "topic": "Future Simple",
+      "difficulty": "hard",
+      "question": "If you study hard, you _____ the exam.",
+      "options": ["will pass", "pass", "passed", "passing"],
+      "answer": 0,
+      "explanation": "First conditional: if + present, will + base verb."
+    },
+    {
+      "id": "fs-h-003",
+      "topic": "Future Simple",
+      "difficulty": "hard",
+      "question": "I'm sure they _____ our proposal.",
+      "options": ["will accept", "accept", "accepted", "accepting"],
+      "answer": 0,
+      "explanation": "'I'm sure' expresses confidence in a future prediction."
+    },
+    {
+      "id": "fs-h-004",
+      "topic": "Future Simple",
+      "difficulty": "hard",
+      "question": "Nobody _____ about this mistake.",
+      "options": ["will know", "knows", "knew", "knowing"],
+      "answer": 0,
+      "explanation": "Future Simple with 'nobody' makes a prediction about secrecy."
+    },
+    {
+      "id": "fs-a-001",
+      "topic": "Future Simple",
+      "difficulty": "advanced",
+      "question": "Not only _____ win, but we _____ break the record.",
+      "options": ["we will / will", "will we / will", "we will / do", "do we / will"],
+      "answer": 1,
+      "explanation": "With 'not only' at the start, inversion occurs: 'will we'."
+    },
+    {
+      "id": "fs-a-002",
+      "topic": "Future Simple",
+      "difficulty": "advanced",
+      "question": "Under no circumstances _____ the door.",
+      "options": ["you will open", "will you open", "do you open", "you open"],
+      "answer": 1,
+      "explanation": "Negative adverbial phrases trigger inversion with 'will'."
+    }
+  ]
+}
