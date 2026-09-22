@@ -322,6 +322,8 @@ textarea:focus-visible {
   border: none;
   cursor: pointer;
   transition: all var(--transition-fast);
+  overflow: hidden;
+  border-radius: var(--radius-sm);
 }
 
 .theme-btn:hover {
@@ -333,10 +335,16 @@ textarea:focus-visible {
 }
 
 .theme-icon {
-  width: 20px;
-  height: 20px;
-  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
   image-rendering: auto;
+  mix-blend-mode: multiply;
+  display: block;
+}
+
+[data-theme="dark"] .theme-icon {
+  mix-blend-mode: screen;
 }
 
 .theme-icon-text {
@@ -1216,6 +1224,58 @@ textarea:focus-visible {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--spacing-md);
+}
+
+/* Theme Preview in Settings */
+.theme-preview-group {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.theme-preview-option {
+  cursor: pointer;
+}
+
+.theme-preview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--surface-alt);
+  border: 2px solid var(--border-light);
+  min-width: 80px;
+  transition: all var(--transition-fast);
+}
+
+.theme-preview-option:hover .theme-preview-card {
+  border-color: var(--border-color);
+}
+
+.theme-preview-option input:checked + .theme-preview-card {
+  background: var(--accent-primary);
+  color: white;
+  border-color: var(--border-color);
+  box-shadow: 2px 2px 0 var(--border-color);
+}
+
+.theme-preview-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  display: block;
+}
+
+[data-theme="dark"] .theme-preview-icon {
+  mix-blend-mode: screen;
+}
+
+.theme-preview-icon-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
 }
 
 /* ========================================
